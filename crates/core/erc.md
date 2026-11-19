@@ -38,3 +38,5 @@ example times it on a root `.kicad_sch`.
 Checks needing the symbol and footprint libraries; off-grid points, bus syntax and conflicts,
 net classes, units (missing, extra, unlike), ground pins, simulation, four-way junctions,
 labels on two wires.
+To look into: on glasgow-revD1 with its `.kicad_pro`, 20 of KiCad's 23 undriven power pins and 1 of
+its 4 dangling wires are found (`corpus/bench.md`, 2026-11-18); kria-k26 agrees kind for kind.

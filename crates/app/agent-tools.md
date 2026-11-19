@@ -46,7 +46,7 @@ args). `cuprita --help` prints `agent::usage`: the modes and every tool (`mcp::n
 
 ## Edits
 `Edits` orders the session's edits, board's and schematic's: `undo` takes the last, `save`
-writes them (`<file>-bak` first); an Cuprita window with the project open shows what is saved.
+writes them (`<file>-bak` first); a Cuprita window with the project open shows what is saved.
 
 ## Checked
 A USB-C thermal camera dongle (ESP32-S3 module, MLX90640, 20 × 32 mm, two layers) was built with

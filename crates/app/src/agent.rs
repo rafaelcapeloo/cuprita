@@ -100,7 +100,7 @@ pub fn usage() -> String {
          cuprita --screenshot out.png board   save a picture of the window, then exit\n\
          cuprita --bench board          print frames a second\n\n\
          Commands (MCP tools; the JSON CLI's \"cmd\", their arguments beside it): {}.\n\
-         MCP's tools/list says what each takes. An Cuprita window with the project open shows what an agent saves.",
+         MCP's tools/list says what each takes. A Cuprita window with the project open shows what an agent saves.",
         mcp::names().join(", ")
     )
 }
