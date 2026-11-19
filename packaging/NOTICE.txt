@@ -1,0 +1,33 @@
+Cuprita is free software under the GNU General Public License, version 3 or later (LICENSE).
+Its source: https://github.com/rafaelcapeloo/cuprita
+
+It comes with the work of others, each under its own licence:
+
+Fonts in the app
+  Inter, (c) The Inter Project Authors: SIL Open Font License 1.1 (LICENSE-Inter.txt).
+  JetBrains Mono, (c) The JetBrains Mono Project Authors: SIL Open Font License 1.1
+  (LICENSE-JetBrainsMono.txt).
+  Phosphor Icons, (c) Phosphor Icons: MIT License (LICENSE-Phosphor.txt); the app carries the
+  icons it shows, as one font.
+  Hershey Roman Simplex, the stroke font boards and sheets are drawn and plotted in, from
+  https://github.com/kamalmostafa/hershey-fonts:
+  - The Hershey Fonts were originally created by Dr. A. V. Hershey while working at the
+    U. S. National Bureau of Standards.
+  - The format of the Font data in this distribution was originally created by James Hurt,
+    Cognition, Inc., 900 Technology Park Drive, Billerica, MA 01821 (mit-eddie!ci-dandelion!hurt).
+
+KiCad's libraries (the folder kicad beside this file's app: symbols, footprints, 3dmodels)
+  (c) the KiCad libraries' contributors: Creative Commons CC-BY-SA 4.0 with KiCad's exception
+  for the designs made with them (kicad/LICENSE.md, kicad/3dmodels/LICENSE.md and CREDITS.md).
+  From https://gitlab.com/kicad/libraries, release 10.0.8. Changed in one way: each symbol
+  library, kept there as a folder with a file per symbol, is packed into one file, as KiCad's
+  own packages install it; the symbols themselves are as KiCad's.
+
+Rust crates
+  The program is built from the crates Cargo.lock in its source names, each under a permissive
+  licence (MIT, Apache-2.0, BSD, ISC, Zlib, Boost, Unicode and the like): CRATES.txt, beside this
+  file, lists them with their licence texts.
+
+Names
+  KiCad(R) is a registered trademark of LF Projects, LLC; Gerber Format(R) of Ucamco. Cuprita
+  reads and writes their files and is not affiliated with, or endorsed by, either.

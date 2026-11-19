@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.rafaelcapeloo.Cuprita</id>
+  <name>Cuprita</name>
+  <summary>PCB and schematic editor for KiCad projects</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <developer id="io.github.rafaelcapeloo">
+    <name>Cuprita's developers</name>
+  </developer>
+  <description>
+    <p>
+      A fast PCB and schematic editor for KiCad projects: open the project you have or start
+      one, and take it from the schematic to the fab's files in one window. Files stay KiCad's,
+      saved byte for byte where you didn't change them.
+    </p>
+    <ul>
+      <li>Schematic: symbols from KiCad's libraries, wires, labels, sheets, buses, electrical
+        rule checks and simulation in ngspice.</li>
+      <li>Board: placing, routing with other nets making way, zones, the outline, design rule
+        checks as you edit, 3D.</li>
+      <li>Make: what an order still needs, Gerber and drill files, the BOM and positions that
+        JLCPCB, PCBWay and OSH Park take.</li>
+      <li>Ask: questions about the project answered by a model on this computer (Ollama).</li>
+    </ul>
+  </description>
+  <launchable type="desktop-id">io.github.rafaelcapeloo.Cuprita.desktop</launchable>
+  <url type="homepage">https://github.com/rafaelcapeloo/cuprita</url>
+  <categories>
+    <category>Development</category>
+    <category>Electronics</category>
+    <category>Engineering</category>
+  </categories>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="0.0.1" date="2026-10-22"/>
+  </releases>
+</component>

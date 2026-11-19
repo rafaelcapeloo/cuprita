@@ -1,0 +1,4002 @@
+# Cuprita: Portuguese (Brazil). English texts from the app (crates/app/src/tr.rs).
+# Translations by Claude; corrections welcome.
+msgid ""
+msgstr ""
+"Language: pt_BR\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid " ({0} left out: not a KiCad part's)"
+msgstr " (deixado de fora: {0}, não de uma peça do KiCad)"
+
+msgid " You can export now; the fab makes what is drawn."
+msgstr " Já dá para exportar; a fábrica faz o que está desenhado."
+
+msgid " or "
+msgstr " ou "
+
+msgid "Ollama's models here run in its cloud, which sends what you ask and the project's data to ollama.com: pick one above to use it, or pull one that runs on this computer (ollama pull gemma4:e4b)"
+msgstr "Os modelos do Ollama aqui rodam na nuvem dele, que envia o que você pergunta e os dados do projeto para ollama.com: escolha um acima para usá-lo, ou baixe um que rode neste computador (ollama pull gemma4:e4b)"
+
+msgid "\"{0}\" can't name files: use letters, digits, spaces, - or _"
+msgstr "\"{0}\" não serve para nomear arquivos: use letras, dígitos, espaços, - ou _"
+
+msgid "+ footprint {0}"
+msgstr "+ footprint {0}"
+
+msgid "- footprint {0}"
+msgstr "- footprint {0}"
+
+msgid "0.0 mV (source)"
+msgstr "0.0 mV (fonte)"
+
+msgid "3D"
+msgstr "3D"
+
+msgid "3D model"
+msgstr "modelo 3D|modelos 3D"
+
+msgid "3D models (STEP, WRL)"
+msgstr "Modelos 3D (STEP, WRL)"
+
+msgid "45° · Shift frees"
+msgstr "45° · Shift libera"
+
+msgid "<unnamed>"
+msgstr "<sem nome>"
+
+msgid "? asks a model on this computer about the project; it only looks."
+msgstr "? pergunta sobre o projeto a um modelo neste computador; ele só olha."
+
+msgid "A .kicad_pro, .kicad_pcb or .kicad_sch"
+msgstr "O .kicad_pro, .kicad_pcb ou .kicad_sch"
+
+msgid "A 3D model from a file: a vendor's STEP"
+msgstr "Um modelo 3D de um arquivo: o STEP de um fornecedor"
+
+msgid "A DC IR-drop heatmap of the net selected (else the main power net) at a test current"
+msgstr "Um mapa de calor da queda IR em CC da rede selecionada (senão, da rede de alimentação principal) com uma corrente de teste"
+
+msgid "A adds them here; from the schematic, F8 brings them over"
+msgstr "A tecla A as adiciona aqui; do esquemático, o F8 as traz"
+
+msgid "A board has an even number of copper layers, 2 to 32: not {0}"
+msgstr "Uma placa tem um número par de camadas de cobre, de 2 a 32: não {0}"
+
+msgid "A bus entry connects to nothing: no pin or label is on it."
+msgstr "Uma entrada de barramento não se conecta a nada: não há pino nem rótulo nela."
+
+msgid "A bus entry's end connects to nothing."
+msgstr "A ponta de uma entrada de barramento não se conecta a nada."
+
+msgid "A class as Default, to name and set"
+msgstr "Uma classe como a Default, para nomear e ajustar"
+
+msgid "A class needs a name of its own: {0} is taken"
+msgstr "Uma classe precisa de um nome próprio: {0} já está em uso"
+
+msgid "A click on a copper layer makes it active; PgUp, PgDn, + and − step through them"
+msgstr "Um clique numa camada de cobre a torna ativa; PgUp, PgDn, + e − passam por elas"
+
+msgid "A command or a project…"
+msgstr "Um comando ou um projeto…"
+
+msgid "A command, a part or a net…"
+msgstr "Um comando, uma peça ou uma rede…"
+
+msgid "A copy of what is picked follows the pointer until a click puts it down"
+msgstr "Uma cópia do que está selecionado segue o ponteiro até um clique colocá-la"
+
+msgid "A cutout goes inside its zone, clear of the outline and the other cutouts: draw it there"
+msgstr "Um recorte vai dentro da zona, sem tocar o contorno nem os outros recortes: desenhe-o ali"
+
+msgid "A cutout needs three corners or more"
+msgstr "Um recorte precisa de três cantos ou mais"
+
+msgid "A finds a part by name or part number; a click puts it down"
+msgstr "A encontra uma peça pelo nome ou pelo número de peça; um clique a posiciona"
+
+msgid "A line lights its parts on the board; Space ticks it off."
+msgstr "Uma linha acende as peças dela na placa; Space a marca como feita."
+
+msgid "A line needs two corners or more"
+msgstr "Uma linha precisa de dois cantos ou mais"
+
+msgid "A meander on this track makes its net as long as the pair's other side"
+msgstr "Um meandro nesta trilha deixa a rede com o comprimento do outro lado do par"
+
+msgid "A new project: a blank board of the size you want, or one of KiCad's templates"
+msgstr "Um projeto novo: uma placa em branco do tamanho que você quiser, ou um dos modelos do KiCad"
+
+msgid "A no-connect flag is on a wire that connects pins."
+msgstr "Uma marca de não conectado está num fio que conecta pinos."
+
+msgid "A no-connect flag isn't on any pin."
+msgstr "Uma marca de não conectado não está em nenhum pino."
+
+msgid "A pad under the body, as QFNs and DFNs have: the table's last pin"
+msgstr "Um pad sob o corpo, como os de QFNs e DFNs: o último pino da tabela"
+
+msgid "A part's 3D model"
+msgstr "O modelo 3D de uma peça"
+
+msgid "A part's KiCad files"
+msgstr "Os arquivos do KiCad de uma peça"
+
+msgid "A part's name can't hold \"{0}\" in KiCad's libraries: use - or _"
+msgstr "O nome de uma peça não pode ter \"{0}\" nas bibliotecas do KiCad: use - ou _"
+
+msgid "A part's name can't hold spaces in KiCad's libraries: use - or _"
+msgstr "O nome de uma peça não pode ter espaços nas bibliotecas do KiCad: use - ou _"
+
+msgid "A phone or another computer on this network opens the page by this code or address: the schematic, the board and its 3D view, to look at. Nothing there changes the project."
+msgstr "Um celular ou outro computador nesta rede abre a página por este código ou endereço: o esquemático, a placa e a vista 3D, só para ver. Nada ali altera o projeto."
+
+msgid "A silkscreen graphic"
+msgstr "Um gráfico da serigrafia"
+
+msgid "A table of that many pins, numbered from 1, half on the left and half on the right"
+msgstr "Uma tabela com essa quantidade de pinos, numerados a partir de 1, metade à esquerda e metade à direita"
+
+msgid "A text needs words: Delete takes it away"
+msgstr "Um texto precisa de palavras: Delete o remove"
+
+msgid "A walk-through: light an LED from a coin cell, step by step from the schematic to the fab's files"
+msgstr "Um passo a passo: acenda um LED com uma bateria de moeda, do esquemático aos arquivos da fábrica"
+
+msgid "A wire connects to nothing: no pin or label is on it."
+msgstr "Um fio não se conecta a nada: não há pino nem rótulo nele."
+
+msgid "A wire's end connects to nothing."
+msgstr "A ponta de um fio não se conecta a nada."
+
+msgid "A zone keeps three corners or more: Delete with the pointer off its corners deletes the zone"
+msgstr "Uma zona mantém três cantos ou mais: Delete com o ponteiro fora dos cantos exclui a zona"
+
+msgid "A zone needs three corners or more"
+msgstr "Uma zona precisa de três cantos ou mais"
+
+msgid "A {0} has as many pads on each side, and its exposed pad: give it 5, 9, 13, 17… pins (now {1})"
+msgstr "Um {0} tem o mesmo número de pads em cada lado, mais o pad exposto: dê a ele 5, 9, 13, 17… pinos (agora {1})"
+
+msgid "A {0} has as many pads on each side: give it 4, 8, 12, 16… pins (now {1})"
+msgstr "Um {0} tem o mesmo número de pads em cada lado: dê a ele 4, 8, 12, 16… pinos (agora {1})"
+
+msgid "A {0} has two rows of pads and its exposed pad: give it an odd number of pins (now {1})"
+msgstr "Um {0} tem duas fileiras de pads e o pad exposto: dê a ele um número ímpar de pinos (agora {1})"
+
+msgid "A {0} has two rows of pads: give it an even number of pins (now {1})"
+msgstr "Um {0} tem duas fileiras de pads: dê a ele um número par de pinos (agora {1})"
+
+msgid "A, type LED, Enter, and put it beside the resistor"
+msgstr "A, digite LED, Enter, e ponha-o ao lado do resistor"
+
+msgid "A, type R, Enter, and put it beside the cell"
+msgstr "A, digite R, Enter, e ponha-o ao lado da bateria"
+
+msgid "A, type battery cell, Enter, then a click puts it on the sheet"
+msgstr "A, digite battery cell, Enter, e um clique a põe na folha"
+
+msgid "AC"
+msgstr "CA"
+
+msgid "ACTIVE"
+msgstr "ATIVA"
+
+msgid "Add"
+msgstr "Adicionar"
+
+msgid "Add a coin cell"
+msgstr "Adicione uma bateria de moeda"
+
+msgid "Add a resistor"
+msgstr "Adicione um resistor"
+
+msgid "Add an LED"
+msgstr "Adicione um LED"
+
+msgid "Add part"
+msgstr "Adicionar peça"
+
+msgid "Add part files…"
+msgstr "Adicionar arquivos de peça…"
+
+msgid "Add pin"
+msgstr "Adicionar pino"
+
+msgid "Add the label inside the sheet, its name exactly the pin's, or delete the pin."
+msgstr "Adicione o rótulo dentro da folha, com o nome exatamente igual ao do pino, ou exclua o pino."
+
+msgid "Add the parts"
+msgstr "Adicione as peças"
+
+msgid "Add the pin to the sheet's box (KiCad: Sync Sheet Pins), or delete the label."
+msgstr "Adicione o pino à caixa da folha (KiCad: Sincronizar pinos da folha), ou exclua o rótulo."
+
+msgid "Added to {0}'s own library: {1}; KiCad finds them too"
+msgstr "Adicionado à biblioteca própria de {0}: {1}; o KiCad também os encontra"
+
+msgid "Adds a part from KiCad's libraries: a footprint on the board, a symbol in the schematic"
+msgstr "Adiciona uma peça das bibliotecas do KiCad: um footprint na placa, um símbolo no esquemático"
+
+msgid "Adds a part's KiCad files, or the zip SnapMagic, Ultra Librarian or SamacSys give, to the project's own library, which KiCad reads too"
+msgstr "Adiciona os arquivos do KiCad de uma peça, ou o zip que o SnapMagic, o Ultra Librarian ou o SamacSys dão, à biblioteca própria do projeto, que o KiCad também lê"
+
+msgid "Adds a sheet below the one shown, its box where there is room: type its name, then Enter"
+msgstr "Adiciona uma folha abaixo da mostrada, com a caixa dela onde houver espaço: digite o nome dela e Enter"
+
+msgid "Adds a sheet below this one: drag its box, then give its name and file (a new one, or one of the project's to show again); a double click opens it"
+msgstr "Adiciona uma folha abaixo desta: arraste a caixa, depois dê o nome e o arquivo (um novo, ou um do projeto para mostrar de novo); um clique duplo a abre"
+
+msgid "Adds the parts of the schematic the board lacks, below it, and puts every part's pads on the schematic's nets, as KiCad's Update PCB from Schematic"
+msgstr "Adiciona abaixo da placa as peças do esquemático que faltam nela e põe os pads de cada peça nas redes do esquemático, como o Atualizar PCB a partir do esquemático do KiCad"
+
+msgid "All"
+msgstr "Todas"
+
+msgid "An LED lit by a coin cell, step by step"
+msgstr "Acenda um LED, passo a passo"
+
+msgid "An arc can't take a meander: pick a straight track"
+msgstr "Um arco não recebe meandro: escolha uma trilha reta"
+
+msgid "An empty board"
+msgstr "Uma placa vazia"
+
+msgid "An empty sheet"
+msgstr "Uma folha vazia"
+
+msgid "An outline needs three corners or more"
+msgstr "Um contorno precisa de três cantos ou mais"
+
+msgid "Annotate the schematic (KiCad: Tools → Annotate Schematic)."
+msgstr "Anote o esquemático (KiCad: Ferramentas → Anotar esquemático)."
+
+msgid "Annotate the schematic again, or rename one."
+msgstr "Anote o esquemático de novo, ou renomeie uma delas."
+
+msgid "Any size, 2 to 16 layers"
+msgstr "Tamanho livre, 2 a 16 camadas"
+
+msgid "Anywhere"
+msgstr "Em qualquer lugar"
+
+msgid "Arc"
+msgstr "Arco"
+
+msgid "As the fab makes it"
+msgstr "Como a fábrica a faz"
+
+msgid "As the system: {0}"
+msgstr "Como o sistema: {0}"
+
+msgid "Ask"
+msgstr "Perguntar"
+
+msgid "Ask (Enter)"
+msgstr "Perguntar (Enter)"
+
+msgid "Ask a local model (Ollama) about this project: it looks up its parts, nets, DRC, ERC, simulation, files and datasheets"
+msgstr "Pergunte a um modelo local (Ollama) sobre este projeto: ele consulta as peças, redes, DRC, ERC, simulação, arquivos e datasheets"
+
+msgid "Ask about this project in plain words. A model on this computer (Ollama) answers, looking up the parts, nets, DRC, ERC and simulation of the board and schematic as they are now (edits not saved yet too), the project's files and its parts' datasheets."
+msgstr "Pergunte sobre este projeto em palavras simples. Um modelo neste computador (Ollama) responde, consultando as peças, redes, DRC, ERC e simulação da placa e do esquemático como estão agora (inclusive as edições ainda não salvas), os arquivos do projeto e os datasheets das peças."
+
+msgid "Asking Digi-Key for {0}…"
+msgstr "Consultando {0} na Digi-Key…"
+
+msgid "Assemble by hand"
+msgstr "Montar à mão"
+
+msgid "At"
+msgstr "Posição"
+
+msgid "Autosave failed: {0}; Ctrl+S saves the board"
+msgstr "O salvamento automático falhou: {0}; Ctrl+S salva a placa"
+
+msgid "Autosave failed: {0}; Ctrl+S saves the sheets"
+msgstr "O salvamento automático falhou: {0}; Ctrl+S salva as folhas"
+
+msgid "Autosaved {0}"
+msgstr "Salvo automaticamente {0}"
+
+msgid "BOM"
+msgstr "BOM"
+
+msgid "BOM checklist"
+msgstr "Lista de montagem (BOM)"
+
+msgid "Back"
+msgstr "Verso"
+
+msgid "Before ordering: {0}"
+msgstr "Antes de encomendar: {0}"
+
+msgid "Before you order"
+msgstr "Antes do pedido"
+
+msgid "Bends the track being routed the other way round: where the way is clear, its diagonal comes first or last; turns the corner of the wire being drawn the other way"
+msgstr "Dobra a trilha em roteamento para o outro lado: onde o caminho está livre, a diagonal vem primeiro ou por último; vira o canto do fio sendo desenhado para o outro lado"
+
+msgid "Bidirectional"
+msgstr "Bidirecional"
+
+msgid "Bill of materials"
+msgstr "Lista de materiais"
+
+msgid "Blank board"
+msgstr "Placa em branco"
+
+msgid "Blank, or from a board template"
+msgstr "Em branco ou de um modelo de placa"
+
+msgid "Blind vias"
+msgstr "Vias cegas"
+
+msgid "Board"
+msgstr "Placa"
+
+msgid "Board and schematic"
+msgstr "Placa e esquemático"
+
+msgid "Board matches the schematic"
+msgstr "A placa confere com o esquemático"
+
+msgid "Board outline closed"
+msgstr "Contorno da placa fechado"
+
+msgid "Board outline drawn"
+msgstr "Contorno da placa desenhado"
+
+msgid "Boards and assembly: gerbers, BOM, positions"
+msgstr "Placas e montagem: Gerbers, BOM, posições"
+
+msgid "Boards: the gerbers zip"
+msgstr "Placas: o zip dos Gerbers"
+
+msgid "Body"
+msgstr "Corpo"
+
+msgid "Bottom"
+msgstr "Embaixo"
+
+msgid "Bottom layer"
+msgstr "Camada de baixo"
+
+msgid "Bring them onto the board"
+msgstr "Leve-as para a placa"
+
+msgid "Bus"
+msgstr "Barramento"
+
+msgid "Bus added"
+msgstr "Barramento adicionado"
+
+msgid "Bus entry"
+msgstr "Entrada de barramento"
+
+msgid "Bus entry added"
+msgstr "Entrada de barramento adicionada"
+
+msgid "Bus entry: a click puts one down, R turns it, Esc stops"
+msgstr "Entrada de barramento: um clique coloca uma, R a gira, Esc para"
+
+msgid "Bus: click to click · a bus, an entry, a label or Enter ends it · Esc stops"
+msgstr "Barramento: de clique em clique · um barramento, uma entrada, um rótulo ou Enter o termina · Esc para"
+
+msgid "Buses"
+msgstr "Barramentos"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Changes"
+msgstr "Alterações"
+
+msgid "Change…"
+msgstr "Alterar…"
+
+msgid "Check that the label at the other end has the same name, case too, or remove this one."
+msgstr "Confira se o rótulo na outra ponta tem o mesmo nome, com as mesmas maiúsculas e minúsculas, ou remova este."
+
+msgid "Checks"
+msgstr "Verificações"
+
+msgid "Choose the part's footprint, or make one from a package"
+msgstr "Escolha o footprint da peça, ou faça um a partir de um encapsulamento"
+
+msgid "Choose…"
+msgstr "Escolher…"
+
+msgid "Circle"
+msgstr "Círculo"
+
+msgid "Class"
+msgstr "Classe"
+
+msgid "Class {0} added: set what its nets keep, and its nets"
+msgstr "Classe {0} adicionada: defina o que as redes dela mantêm, e as redes"
+
+msgid "Class {0} deleted"
+msgstr "Classe {0} excluída"
+
+msgid "Class {0} is now {1}"
+msgstr "A classe {0} agora é {1}"
+
+msgid "Clearance"
+msgstr "Folga"
+
+msgid "Clearance {0}, tracks from {1}"
+msgstr "Folga {0}, trilhas a partir de {1}"
+
+msgid "Click a pad of a differential pair · then its corners · its other pads end it · Enter ends it here · Esc drops it"
+msgstr "Clique num pad de um par diferencial · depois nos cantos · os outros pads do par o terminam · Enter termina aqui · Esc descarta"
+
+msgid "Click a pad or track: the zone takes its net · then its corners · Enter fills it · Esc drops it"
+msgstr "Clique em um pad ou trilha: a zona assume a rede dele · depois os cantos · Enter a preenche · Esc descarta"
+
+msgid "Click a pad, via or track end of a differential pair"
+msgstr "Clique num pad, via ou ponta de trilha de um par diferencial"
+
+msgid "Click a pad, via or track end of a differential pair (nets named as D+ and D-, or CLK_P and CLK_N): its two tracks follow the pointer side by side, as wide and as far apart as their net class says, round other nets · a click fixes a corner, on the pair's other pads ends it there · Enter or double click ends it at the pointer · Backspace takes the last corner back · Esc drops it, again leaves the tool"
+msgstr "Clique num pad, via ou ponta de trilha de um par diferencial (redes nomeadas como D+ e D-, ou CLK_P e CLK_N): as duas trilhas seguem o ponteiro lado a lado, com a largura e a distância da classe de rede, contornando as outras redes · um clique fixa um canto; nos outros pads do par, termina ali · Enter ou clique duplo termina no ponteiro · Backspace desfaz o último canto · Esc descarta; de novo, sai da ferramenta"
+
+msgid "Click a pad, via or track to start a track there"
+msgstr "Clique em um pad, via ou trilha para começar uma trilha ali"
+
+msgid "Click a pad, via or track: the zone takes its net and layer"
+msgstr "Clique em um pad, via ou trilha: a zona assume a rede e a camada dele"
+
+msgid "Click a pad, via or track: the zone takes its net and layer · then click its corners, on the grid (Ctrl frees them) · Enter or double click closes and fills it · Backspace drops the last corner · Esc drops the zone, again leaves the tool"
+msgstr "Clique em um pad, via ou trilha: a zona assume a rede e a camada dele · depois clique nos cantos dela, na grade (Ctrl os libera) · Enter ou clique duplo a fecha e preenche · Backspace descarta o último canto · Esc descarta a zona; de novo, sai da ferramenta"
+
+msgid "Click a part, then Footprint › Choose… in Inspect"
+msgstr "Clique numa peça, depois em Footprint › Escolher… em Inspeção"
+
+msgid "Click a part, then drag it into place; R turns it"
+msgstr "Clique numa peça e arraste-a até o lugar; R a gira"
+
+msgid "Click a part, track, via, zone, text or line to inspect it; its net lights up. Shift+click or Shift+drag picks several."
+msgstr "Clique em uma peça, trilha, via, zona, texto ou linha para inspecionar; a rede dela acende. Shift+clique ou Shift+arrastar seleciona vários."
+
+msgid "Click a symbol, wire or label to inspect it; Shift+click or Shift+drag picks several."
+msgstr "Clique em um símbolo, fio ou rótulo para inspecionar; Shift+clique ou Shift+arrastar seleciona vários."
+
+msgid "Click each, then Footprint › Choose…: 3034 finds the cell's holder, 0805 HandSolder the others"
+msgstr "Clique em cada uma, depois em Footprint › Escolher…: 3034 encontra o suporte da bateria, 0805 HandSolder as outras"
+
+msgid "Click fixes the track up to the pointer · PgUp, PgDn, + and − go on on another layer from a via, V on the other side; Shift+V keeps vias to the layers they join (blind or buried) · W and Shift+W step its width, / swaps its bend, P walks round other nets or shoves them · Enter or double click finishes · Esc drops the unfixed part, again leaves the tool"
+msgstr "Um clique fixa a trilha até o ponteiro · PgUp, PgDn, + e − seguem em outra camada a partir de uma via, V no outro lado; Shift+V limita as vias às camadas que elas ligam (cegas ou enterradas) · W e Shift+W mudam a largura, / troca a curva, P contorna as outras redes ou as empurra · Enter ou clique duplo termina · Esc descarta a parte não fixada; de novo, sai da ferramenta"
+
+msgid "Click fixes the track · V via · W width · / bend · P shove · Enter finishes · Esc drops it"
+msgstr "Clique fixa a trilha · V via · W largura · / curva · P empurra · Enter termina · Esc descarta"
+
+msgid "Click hides it"
+msgstr "Um clique a oculta"
+
+msgid "Click it and type 120 in Value: from a 3 V cell a red LED then draws about 10 mA"
+msgstr "Clique nele e digite 120 em Value: com uma bateria de 3 V, um LED vermelho consome então cerca de 10 mA"
+
+msgid "Click its corners inside the selected zone · Enter cuts it out · Esc drops it"
+msgstr "Clique nos cantos dentro da zona selecionada · Enter o recorta · Esc descarta"
+
+msgid "Click its corners or drag a rectangle · Enter ends it · Backspace undoes a corner · Esc drops it"
+msgstr "Clique nos cantos ou arraste um retângulo · Enter a termina · Backspace desfaz um canto · Esc descarta"
+
+msgid "Click makes it the active layer: tracks go on it, drawn on top"
+msgstr "Um clique a torna a camada ativa: as trilhas vão nela, desenhada por cima"
+
+msgid "Click or Enter adds it · ↑↓ pick"
+msgstr "Clique ou Enter adiciona · ↑↓ selecionam"
+
+msgid "Click or Enter asks Digi-Key · ↑↓ pick"
+msgstr "Clique ou Enter consulta a Digi-Key · ↑↓ selecionam"
+
+msgid "Click shows it"
+msgstr "Um clique a mostra"
+
+msgid "Click the corners of a line, on the grid (Ctrl frees them, Shift their angle), or drag a rectangle · Enter or double click ends it · Backspace drops the last corner · Esc drops it, again leaves the tool"
+msgstr "Clique nos cantos de uma linha, na grade (Ctrl os libera, Shift libera o ângulo), ou arraste um retângulo · Enter ou clique duplo a termina · Backspace descarta o último canto · Esc a descarta; de novo, sai da ferramenta"
+
+msgid "Click the cutout's corners inside the selected zone, on the grid (Ctrl frees them) · Enter or double click cuts it out · Backspace drops the last corner · Esc drops it, again leaves the tool"
+msgstr "Clique nos cantos do recorte dentro da zona selecionada, na grade (Ctrl os libera) · Enter ou clique duplo o recorta · Backspace descarta o último canto · Esc o descarta; de novo, sai da ferramenta"
+
+msgid "Click to mark its parts · Space ticks the selected line and moves on · ↑↓ select"
+msgstr "Clique para marcar as peças · Space marca a linha selecionada e segue · ↑↓ selecionam"
+
+msgid "Click to see it"
+msgstr "Clique para ver"
+
+msgid "Click to zoom · Right-click to set as source"
+msgstr "Clique para ampliar · Clique direito para usar como fonte"
+
+msgid "Click two points · Esc clears"
+msgstr "Clique em dois pontos · Esc limpa"
+
+msgid "Click two points: the distance between them in mm and mil, and along each axis"
+msgstr "Clique em dois pontos: a distância entre eles em mm e mil, e ao longo de cada eixo"
+
+msgid "Client ID"
+msgstr "Client ID"
+
+msgid "Client Secret"
+msgstr "Client Secret"
+
+msgid "Close"
+msgstr "Fechar"
+
+msgid "Close (Esc)"
+msgstr "Fechar (Esc)"
+
+msgid "Close: Ctrl+K › First steps shows it again"
+msgstr "Fechar: Ctrl+K › Primeiros passos o mostra de novo"
+
+msgid "Commands and keys"
+msgstr "Comandos e teclas"
+
+msgid "Comment {0}"
+msgstr "Comentário {0}"
+
+msgid "Company"
+msgstr "Empresa"
+
+msgid "Connect an output to it, or a pull-up or pull-down resistor; if the pin is unused, flag it no-connect."
+msgstr "Conecte a ele uma saída, ou um resistor de pull-up ou pull-down; se o pino não for usado, marque-o como não conectado."
+
+msgid "Connect it, or delete it."
+msgstr "Conecte ou exclua."
+
+msgid "Connections still to route: Checks lists them"
+msgstr "Conexões ainda a rotear: Verificações as lista"
+
+msgid "Copies the address"
+msgstr "Copia o endereço"
+
+msgid "Copies what is picked, for Paste here or in KiCad"
+msgstr "Copia o que está selecionado, para colar aqui ou no KiCad"
+
+msgid "Copper"
+msgstr "Cobre"
+
+msgid "Copper layers"
+msgstr "Camadas de cobre"
+
+msgid "Copper too close"
+msgstr "Cobre perto demais"
+
+msgid "Copper too near a hole"
+msgstr "Cobre perto demais de um furo"
+
+msgid "Copper too near the edge"
+msgstr "Cobre perto demais da borda"
+
+msgid "Copy"
+msgstr "Copiar"
+
+msgid "Couldn't keep the key in {0}: {1}"
+msgstr "Não foi possível guardar a chave em {0}: {1}"
+
+msgid "Couldn't keep the key: Cuprita has no data folder (set HOME)"
+msgstr "Não foi possível guardar a chave: o Cuprita não tem pasta de dados (defina HOME)"
+
+msgid "Couldn't open {0} ({1}: {2}): open it yourself"
+msgstr "Não foi possível abrir {0} ({1}: {2}): abra você mesmo"
+
+msgid "Courtyards of {0} and {1} overlap on {2}"
+msgstr "Os pátios de {0} e {1} se sobrepõem em {2}"
+
+msgid "Create part"
+msgstr "Criar peça"
+
+msgid "Create project"
+msgstr "Criar projeto"
+
+msgid "Ctrl+E jumps between a part's symbol and its footprint."
+msgstr "Ctrl+E salta entre o símbolo de uma peça e o footprint dela."
+
+msgid "Ctrl+K finds any command, part or net by a few of its letters."
+msgstr "Ctrl+K encontra qualquer comando, peça ou rede por algumas das suas letras."
+
+msgid "Current by IPC-2152 at the narrowest track; impedance from the stackup."
+msgstr "Corrente pela IPC-2152 na trilha mais estreita; impedância pelo stackup."
+
+msgid "Current, 10 °C rise"
+msgstr "Corrente, elevação de 10 °C"
+
+msgid "Cutout"
+msgstr "Recorte"
+
+msgid "Cutout: click its corners inside the zone"
+msgstr "Recorte: clique nos cantos dele dentro da zona"
+
+msgid "Cutout: {0}"
+msgstr "Recorte: {0}"
+
+msgid "Cuts a hole in the selected zone: click the hole's corners inside it"
+msgstr "Abre um furo na zona selecionada: clique nos cantos do furo dentro dela"
+
+msgid "D lists the design rule problems; hover one for its fix."
+msgstr "D lista os problemas de regras de projeto; passe o ponteiro sobre um para ver a correção."
+
+msgid "D lists what is wrong; hover one for its fix"
+msgstr "D lista o que está errado; passe o ponteiro sobre um item para ver a correção"
+
+msgid "DC sweep"
+msgstr "Varredura CC"
+
+msgid "DRC problem"
+msgstr "problema de DRC|problemas de DRC"
+
+msgid "Dark"
+msgstr "Escura"
+
+msgid "Datasheet"
+msgstr "Datasheet"
+
+msgid "Datasheets · {0}"
+msgstr "Datasheets · {0}"
+
+msgid "Date"
+msgstr "Data"
+
+msgid "Delete"
+msgstr "Excluir"
+
+msgid "Delete class"
+msgstr "Excluir classe"
+
+msgid "Deletes what is picked: parts, tracks, vias, zones, texts and drawings; in the schematic, symbols, wires and labels"
+msgstr "Exclui o que está selecionado: peças, trilhas, vias, zonas, textos e desenhos; no esquemático, símbolos, fios e rótulos"
+
+msgid "Description"
+msgstr "Descrição"
+
+msgid "Design rules"
+msgstr "Regras de projeto"
+
+msgid "Design rules pass"
+msgstr "Regras de projeto atendidas"
+
+msgid "Digi-Key"
+msgstr "Digi-Key"
+
+msgid "Digi-Key has no part numbered {0}"
+msgstr "A Digi-Key não tem peça com o número {0}"
+
+msgid "Digi-Key has no part numbered {0}; it has {1}"
+msgstr "A Digi-Key não tem peça com o número {0}; ela tem {1}"
+
+msgid "Digi-Key looks part numbers up with your own API key, free: make an app with Product Information V4 at developer.digikey.com, then paste its Client ID and Secret in Settings (Ctrl+,)"
+msgstr "A Digi-Key busca números de peça com a sua própria chave de API, gratuita: crie um app com Product Information V4 em developer.digikey.com e cole o Client ID e o Secret dele em Configurações (Ctrl+,)"
+
+msgid "Digi-Key's part of this number: KiCad's symbol for it, else a resistor's, capacitor's or inductor's, with its value, footprint, datasheet, maker and number set (your own key, free at developer.digikey.com, in Settings: Ctrl+,)"
+msgstr "A peça da Digi-Key com este número: o símbolo do KiCad para ela, senão o de um resistor, capacitor ou indutor, com valor, footprint, datasheet, fabricante e número preenchidos (sua própria chave, gratuita em developer.digikey.com, em Configurações: Ctrl+,)"
+
+msgid "Digi-Key's reply isn't JSON: {0}"
+msgstr "A resposta da Digi-Key não é JSON: {0}"
+
+msgid "Don't save"
+msgstr "Não salvar"
+
+msgid "Done: the board is ready to order"
+msgstr "Concluído: a placa está pronta para encomendar"
+
+msgid "Downloads the board with its edits"
+msgstr "Baixa a placa com as suas edições"
+
+msgid "Drag a corner to move it, an edge's middle to add one; Delete with the pointer on a corner takes it away."
+msgstr "Arraste um canto para movê-lo, o meio de um lado para acrescentar um; Delete com o ponteiro sobre um canto o remove."
+
+msgid "Drag a rectangle or click its corners · Enter closes it · Backspace undoes a corner · Esc drops it"
+msgstr "Arraste um retângulo ou clique nos cantos · Enter o fecha · Backspace desfaz um canto · Esc descarta"
+
+msgid "Drag a rectangle, or click the outline's corners, on the grid (Ctrl frees them) · Enter or double click closes it as the board's outline · Backspace drops the last corner · Esc drops it, again leaves the tool"
+msgstr "Arraste um retângulo ou clique nos cantos do contorno, na grade (Ctrl os libera) · Enter ou clique duplo o fecha como contorno da placa · Backspace descarta o último canto · Esc o descarta; de novo, sai da ferramenta"
+
+msgid "Drag across: a rectangle needs a width and a height"
+msgstr "Arraste na diagonal: um retângulo precisa de largura e altura"
+
+msgid "Drag it on the sheet to move it; its wires follow."
+msgstr "Arraste-a na folha para movê-la; os fios dela acompanham."
+
+msgid "Drag it on the sheet to move it; what joins it follows."
+msgstr "Arraste-o na folha para movê-lo; o que está ligado a ele acompanha."
+
+msgid "Drag one on the sheet to move them all; what joins them follows."
+msgstr "Arraste um na folha para mover todos; o que está ligado a eles acompanha."
+
+msgid "Drag one to move them all, the arrows a grid step; tracks not picked stay where they are."
+msgstr "Arraste um para mover todos, as setas um passo da grade; as trilhas não selecionadas ficam onde estão."
+
+msgid "Drag turns the board · right or middle drag slides it · wheel zooms · F turns it over · Esc: back to the board"
+msgstr "Arrastar gira a placa · arrastar com o botão direito ou do meio a desliza · a roda dá zoom · F a vira · Esc: volta à placa"
+
+msgid "Draw"
+msgstr "Desenhar"
+
+msgid "Draw the board's outline"
+msgstr "Desenhe o contorno da placa"
+
+msgid "Drawing sheet"
+msgstr "Folha de desenho"
+
+msgid "Draws a copper zone on the net and layer of the pad, via or track clicked first"
+msgstr "Desenha uma zona de cobre na rede e na camada do pad, via ou trilha clicado primeiro"
+
+msgid "Draws a track from a pad, via or track, around other nets with the clearances"
+msgstr "Desenha uma trilha a partir de um pad, via ou trilha, contornando outras redes com as folgas"
+
+msgid "Draws buses as W draws wires; a label names its members (D[0..7], {SDA SCL}) and bus entries (Z) join wires to it"
+msgstr "Desenha barramentos como o W desenha fios; um rótulo nomeia os membros (D[0..7], {SDA SCL}) e as entradas de barramento (Z) ligam fios a ele"
+
+msgid "Draws lines on the silkscreen, or the layer chosen: click their corners, or drag a rectangle"
+msgstr "Desenha linhas na serigrafia, ou na camada escolhida: clique nos cantos ou arraste um retângulo"
+
+msgid "Draws the board's outline on Edge.Cuts: drag a rectangle, or click its corners"
+msgstr "Desenha o contorno da placa em Edge.Cuts: arraste um retângulo ou clique nos cantos"
+
+msgid "Draws wires: a click starts one, each click after adds to it"
+msgstr "Desenha fios: um clique começa um, cada clique seguinte acrescenta um trecho"
+
+msgid "Drill"
+msgstr "Furo"
+
+msgid "Drop a .kicad_pcb file here, with its .kicad_pro for the design rules"
+msgstr "Solte aqui um arquivo .kicad_pcb, com o .kicad_pro dele para as regras de projeto"
+
+msgid "Drop a .kicad_pro on the window to open its board."
+msgstr "Solte um .kicad_pro na janela para abrir a placa dele."
+
+msgid "Drop a KiCad project anywhere"
+msgstr "Solte um projeto do KiCad em qualquer lugar"
+
+msgid "Drop the .kicad_pcb file and its .kicad_pro together"
+msgstr "Solte o arquivo .kicad_pcb e o .kicad_pro dele juntos"
+
+msgid "Dual op-amp"
+msgstr "Amplificador operacional duplo"
+
+msgid "Duplicate"
+msgstr "Duplicar"
+
+msgid "Edits are autosaved 5 s after the last one, beside each file as _autosave-…; Ctrl+S writes them into the files"
+msgstr "As edições são salvas automaticamente 5 s após a última, ao lado de cada arquivo como _autosave-…; Ctrl+S as grava nos arquivos"
+
+msgid "Edits not saved"
+msgstr "Edições não salvas"
+
+msgid "Edits not saved yet (autosaved meanwhile)"
+msgstr "Edições ainda não salvas (salvas automaticamente enquanto isso)"
+
+msgid "Cuprita can't run in this browser: {0}. It needs WebGPU or WebGL 2: try a current Chrome, Edge, Firefox or Safari."
+msgstr "O Cuprita não roda neste navegador: {0}. Ele precisa de WebGPU ou WebGL 2: experimente um Chrome, Edge, Firefox ou Safari atual."
+
+msgid "Cuprita {0} · GPL-3.0-or-later · opens KiCad 4–10 boards and 6–10 schematics, and saves them as they were but for your edits"
+msgstr "Cuprita {0} · GPL-3.0-or-later · abre placas do KiCad 4–10 e esquemáticos do 6–10, e os salva como estavam, a não ser pelas suas edições"
+
+msgid "End it on a pin, a wire's end or a junction: a wire ending on another's middle needs a junction there."
+msgstr "Termine num pino, na ponta de um fio ou numa junção: um fio que termina no meio de outro precisa de uma junção ali."
+
+msgid "Enlarge pad copper or shrink drill so ring >= {0}"
+msgstr "Aumente o cobre do pad ou diminua o furo para o anel ficar ≥ {0}"
+
+msgid "Every check before ordering passes: Make has the fab files"
+msgstr "Todas as verificações antes de encomendar passam: Fabricar tem os arquivos de fabricação"
+
+msgid "Every check passes: export the fab files, then order from a fab below."
+msgstr "Todas as verificações passam: exporte os arquivos de fabricação e faça o pedido a uma fábrica abaixo."
+
+msgid "Every command with its keys and what it does, by where it works; the walk-through to a first board"
+msgstr "Todos os comandos com suas teclas e o que fazem, por onde funcionam; o passo a passo até uma primeira placa"
+
+msgid "Every command, part and net by a few letters of its name: Enter runs the command or shows the part or net"
+msgstr "Todo comando, peça e rede por algumas letras do nome: Enter executa o comando ou mostra a peça ou rede"
+
+msgid "Every connection routed"
+msgstr "Todas as conexões roteadas"
+
+msgid "Every design rule passes."
+msgstr "Todas as regras de projeto são atendidas."
+
+msgid "Every electrical rule passes."
+msgstr "Todas as regras elétricas são atendidas."
+
+msgid "Every length shown and typed (Ctrl+U switches them); files keep KiCad's millimetres."
+msgstr "Todo comprimento mostrado e digitado (Ctrl+U alterna); os arquivos mantêm os milímetros do KiCad."
+
+msgid "Every part has a part number"
+msgstr "Toda peça tem número de peça"
+
+msgid "Every step"
+msgstr "Todos os passos"
+
+msgid "Examples"
+msgstr "Exemplos"
+
+msgid "Export fab files"
+msgstr "Exportar arquivos de fabricação"
+
+msgid "Export the fab files"
+msgstr "Exporte os arquivos de fabricação"
+
+msgid "Exposed pad"
+msgstr "Pad exposto"
+
+msgid "F8 brings the schematic's changes onto the board."
+msgstr "F8 leva as alterações do esquemático para a placa."
+
+msgid "F8 puts the schematic's parts and nets on the board"
+msgstr "F8 põe as peças e redes do esquemático na placa"
+
+msgid "FOOTPRINT"
+msgstr "FOOTPRINT"
+
+msgid "FOUND ON THIS COMPUTER"
+msgstr "ENCONTRADO NESTE COMPUTADOR"
+
+msgid "Fab files"
+msgstr "Arquivos de fabricação"
+
+msgid "Fab files not made: {0}"
+msgstr "Arquivos de fabricação não gerados: {0}"
+
+msgid "Fields"
+msgstr "Campos"
+
+msgid "Files"
+msgstr "Arquivos"
+
+msgid "Files for the fab"
+msgstr "Arquivos para a fábrica"
+
+msgid "Fill"
+msgstr "Preencher"
+
+msgid "Fill in"
+msgstr "Preencher"
+
+msgid "Fill zones"
+msgstr "Preencher zonas"
+
+msgid "Filled area"
+msgstr "Área preenchida"
+
+msgid "Fills every copper zone again, as KiCad's Fill All Zones"
+msgstr "Preenche de novo todas as zonas de cobre, como o Preencher todas as zonas do KiCad"
+
+msgid "Fills the zones, then downloads <board>-gerbers.zip (Gerbers and drills), -bom.csv and -positions.csv, which JLCPCB, PCBWay and OSH Park take as they are"
+msgstr "Preenche as zonas e baixa <placa>-gerbers.zip (Gerbers e furação), -bom.csv e -positions.csv, que a JLCPCB, a PCBWay e a OSH Park aceitam como estão"
+
+msgid "Fills the zones, then writes <board>-gerbers.zip (Gerbers and drills), -bom.csv and -positions.csv next to the board, which JLCPCB, PCBWay and OSH Park take as they are"
+msgstr "Preenche as zonas e grava <placa>-gerbers.zip (Gerbers e furação), -bom.csv e -positions.csv ao lado da placa, que a JLCPCB, a PCBWay e a OSH Park aceitam como estão"
+
+msgid "Find a command: a word of what it does, or its key"
+msgstr "Encontre um comando: uma palavra do que ele faz, ou a tecla"
+
+msgid "Find or run…"
+msgstr "Localizar ou executar…"
+
+msgid "First board"
+msgstr "Primeira placa"
+
+msgid "First steps"
+msgstr "Primeiros passos"
+
+msgid "Fitted"
+msgstr "Montada"
+
+msgid "Five things before you order"
+msgstr "Cinco coisas antes do pedido"
+
+msgid "Flags a pin left unconnected on purpose, so ERC lets it be: a click flags a pin, a click on a flag takes it away"
+msgstr "Marca um pino deixado desconectado de propósito, para o ERC não reclamar: um clique marca um pino, um clique numa marca a retira"
+
+msgid "Flip part"
+msgstr "Virar peça"
+
+msgid "Flip view"
+msgstr "Virar a vista"
+
+msgid "Fold the dock"
+msgstr "Recolher o painel"
+
+msgid "Folder"
+msgstr "Pasta"
+
+msgid "Footprint"
+msgstr "Footprint"
+
+msgid "Forget it"
+msgstr "Esquecer"
+
+msgid "Four things before you order"
+msgstr "Quatro coisas antes do pedido"
+
+msgid "Free"
+msgstr "Livre"
+
+msgid "Front"
+msgstr "Frente"
+
+msgid "Full"
+msgstr "Completo"
+
+msgid "Gerber X2 and Excellon, as KiCad writes them. Export fills the zones first and keeps files already there as -bak."
+msgstr "Gerber X2 e Excellon, como o KiCad os grava. Exportar preenche as zonas primeiro e guarda como -bak os arquivos que já estavam lá."
+
+msgid "Gerbers and drills"
+msgstr "Gerbers e furação"
+
+msgid "Give each part a footprint"
+msgstr "Dê um footprint a cada peça"
+
+msgid "Give the part a name, as LM358: its symbol's name and its value"
+msgstr "Dê um nome à peça, como LM358: o nome do símbolo e o valor dela"
+
+msgid "Give the part its pins: type how many, then Fill"
+msgstr "Dê os pinos à peça: digite quantos, depois Preencher"
+
+msgid "Global"
+msgstr "Global"
+
+msgid "Global label"
+msgstr "Rótulo global"
+
+msgid "Global labels"
+msgstr "Rótulos globais"
+
+msgid "Goes"
+msgstr "Atravessa"
+
+msgid "Grid {0}"
+msgstr "Grade {0}"
+
+msgid "Guide"
+msgstr "Guia"
+
+msgid "Height"
+msgstr "Altura"
+
+msgid "Help"
+msgstr "Ajuda"
+
+msgid "Hidden texts"
+msgstr "Textos ocultos"
+
+msgid "Hierarchical label"
+msgstr "Rótulo hierárquico"
+
+msgid "Hierarchical label {0} has no sheet pin {0} on this sheet's box in sheet {1}."
+msgstr "Rótulo hierárquico {0} não tem pino de folha {0} na caixa desta folha, na folha {1}."
+
+msgid "Hierarchical label {0} has no sheet pin {0} on this sheet's box in the root sheet."
+msgstr "Rótulo hierárquico {0} não tem pino de folha {0} na caixa desta folha, na folha raiz."
+
+msgid "Hierarchical labels"
+msgstr "Rótulos hierárquicos"
+
+msgid "Holes"
+msgstr "Furos"
+
+msgid "Holes too close"
+msgstr "Furos perto demais"
+
+msgid "Holes too small"
+msgstr "Furos pequenos demais"
+
+msgid "Home"
+msgstr "Início"
+
+msgid "Home fits the board or the sheet in view again."
+msgstr "Home enquadra de novo a placa ou a folha na vista."
+
+msgid "Home: new, open and recent projects"
+msgstr "Início: projetos novos, abertos e recentes"
+
+msgid "IR Drop: {0}"
+msgstr "Queda IR: {0}"
+
+msgid "IR drop"
+msgstr "Queda IR"
+
+msgid "If the names are one net, keep one; if they are two nets, they are shorted here: separate them."
+msgstr "Se os nomes são de uma só rede, mantenha um; se são duas redes, elas estão em curto aqui: separe-as."
+
+msgid "If the power comes from a connector, a battery or a part whose pins aren't power outputs, put a PWR_FLAG on the net; otherwise connect the supply."
+msgstr "Se a alimentação vem de um conector, uma bateria ou uma peça cujos pinos não são saídas de alimentação, ponha um PWR_FLAG na rede; senão, conecte a fonte."
+
+msgid "Impedance"
+msgstr "Impedância"
+
+msgid "In a face of its own or knocked out in KiCad: drawn here in plain strokes, it keeps its face in the file."
+msgstr "Com fonte própria ou vazado (knockout) no KiCad: desenhado aqui em traços simples, mantém a fonte no arquivo."
+
+msgid "Increase pad drill to at least {0}"
+msgstr "Aumente o furo do pad para pelo menos {0}"
+
+msgid "Increase via diameter to at least {0}"
+msgstr "Aumente o diâmetro da via para pelo menos {0}"
+
+msgid "Increase via drill to at least {0}"
+msgstr "Aumente o furo da via para pelo menos {0}"
+
+msgid "Increase via size or shrink drill so ring >= {0}"
+msgstr "Aumente a via ou diminua o furo para o anel ficar ≥ {0}"
+
+msgid "Input"
+msgstr "Entrada"
+
+msgid "Inputs nothing drives"
+msgstr "Entradas que nada aciona"
+
+msgid "Inspect"
+msgstr "Inspeção"
+
+msgid "It goes into {0}'s own library (libraries/), which KiCad reads too."
+msgstr "Ela vai para a biblioteca própria de {0} (libraries/), que o KiCad também lê."
+
+msgid "It only looks"
+msgstr "Só consulta"
+
+msgid "It opens as it is. Nothing is converted; saving keeps every byte you didn't change."
+msgstr "Abre como está. Nada é convertido; salvar mantém cada byte que você não alterou."
+
+msgid "Items"
+msgstr "Itens"
+
+msgid "Its file, beside the root sheet: a new one, or one of the project's (or this folder's) to show again"
+msgstr "O arquivo dela, ao lado da folha raiz: um novo, ou um do projeto (ou desta pasta) para mostrar de novo"
+
+msgid "Its length out from the body, and its width along the row"
+msgstr "O comprimento para fora do corpo, e a largura ao longo da fileira"
+
+msgid "Its letters: U, J, D, Q…; KiCad numbers the parts after them"
+msgstr "As letras dela: U, J, D, Q…; o KiCad numera as peças depois delas"
+
+msgid "Its net is {0} long already: a meander only adds length"
+msgstr "A rede já tem {0}: um meandro só acrescenta comprimento"
+
+msgid "Its net needs {0} more, less than the smallest turn adds ({1})"
+msgstr "A rede precisa de mais {0}, menos do que a menor volta acrescenta ({1})"
+
+msgid "Its nets are Default's again"
+msgstr "As redes dela voltam para a Default"
+
+msgid "Its nets · clearance / track width"
+msgstr "Redes dela · folga / largura de trilha"
+
+msgid "Its shape: which way its signal goes (KiCad's)"
+msgstr "O formato: para que lado vai o sinal (como no KiCad)"
+
+msgid "Its width across the rows, and its length along them"
+msgstr "A largura de uma fileira à outra, e o comprimento ao longo delas"
+
+msgid "Joins a wire to a bus at 45°: one follows the pointer on the grid, R turns it, each click puts one down"
+msgstr "Liga um fio a um barramento a 45°: uma segue o ponteiro na grade, R a gira, cada clique coloca uma"
+
+msgid "Joins the labels of its name on every sheet, not only on this one"
+msgstr "Liga os rótulos de mesmo nome em todas as folhas, não só nesta"
+
+msgid "Keeps out"
+msgstr "Exclui"
+
+msgid "Kept in"
+msgstr "Guardado em"
+
+msgid "KiCad example"
+msgstr "exemplo do KiCad"
+
+msgid "KiCad part files or their zip"
+msgstr "Arquivos de peça do KiCad ou o zip deles"
+
+msgid "KiCad project"
+msgstr "Projeto do KiCad"
+
+msgid "KiCad's demo projects, as KiCad installed them"
+msgstr "Projetos de demonstração do KiCad, como o KiCad os instalou"
+
+msgid "KiCad's footprint libraries aren't installed here"
+msgstr "As bibliotecas de footprints do KiCad não estão instaladas aqui"
+
+msgid "KiCad's libraries have no Device:{0}"
+msgstr "As bibliotecas do KiCad não têm Device:{0}"
+
+msgid "KiCad's libraries have no symbol for {0} ({1}): add one by what it is"
+msgstr "As bibliotecas do KiCad não têm símbolo para {0} ({1}): adicione um pelo que ela é"
+
+msgid "KiCad's ngspice doesn't load on this system: install the system's own (libngspice), which Cuprita tries first"
+msgstr "O ngspice do KiCad não carrega neste sistema: instale o do próprio sistema (libngspice), que o Cuprita tenta primeiro"
+
+msgid "KiCad's {0} footprint and {1} symbol libraries"
+msgstr "{0} bibliotecas de footprints e {1} de símbolos do KiCad"
+
+msgid "Label"
+msgstr "Rótulo"
+
+msgid "Label {0} is local and a global label {0} is on this sheet: here they join, but labels {0} on other sheets don't."
+msgstr "Rótulo {0} é local e há um rótulo global {0} nesta folha: aqui eles se ligam, mas os rótulos {0} de outras folhas não."
+
+msgid "Label: type the net's name, then Enter; Esc stops"
+msgstr "Rótulo: digite o nome da rede e tecle Enter; Esc para"
+
+msgid "Labels"
+msgstr "Rótulos"
+
+msgid "Labels on nothing"
+msgstr "Rótulos sobre nada"
+
+msgid "Labels on one pin alone"
+msgstr "Rótulos em um pino só"
+
+msgid "Labels {0} and {1} differ only in case, so they name two nets."
+msgstr "Rótulos {0} e {1} só diferem em maiúsculas e minúsculas, então nomeiam duas redes."
+
+msgid "Language"
+msgstr "Idioma"
+
+msgid "Layer"
+msgstr "Camada"
+
+msgid "Layers"
+msgstr "Camadas"
+
+msgid "Leave one output on the net; if a pin is really an input, fix its type in the symbol."
+msgstr "Deixe uma só saída na rede; se um pino for na verdade uma entrada, corrija o tipo dele no símbolo."
+
+msgid "Leave the pin open, or, if it does connect, fix its type in the symbol."
+msgstr "Deixe o pino desconectado ou, se ele se conecta de fato, corrija o tipo dele no símbolo."
+
+msgid "Leave the walk-through"
+msgstr "Sair do passo a passo"
+
+msgid "Left"
+msgstr "Esquerda"
+
+msgid "Length"
+msgstr "Comprimento"
+
+msgid "Length {0} isn't a length: type one in {1}, or as 45.2mm or 1780mil"
+msgstr "Comprimento {0} não é um comprimento: digite em {1}, ou como 45.2mm ou 1780mil"
+
+msgid "Lengths in mils: a click (or Ctrl+U) shows mm"
+msgstr "Comprimentos em mils: um clique (ou Ctrl+U) mostra mm"
+
+msgid "Lengths in mm: a click (or Ctrl+U) shows mils"
+msgstr "Comprimentos em mm: um clique (ou Ctrl+U) mostra mils"
+
+msgid "Light"
+msgstr "Clara"
+
+msgid "Line"
+msgstr "Linha"
+
+msgid "Line on {0}: {1}"
+msgstr "Linha em {0}: {1}"
+
+msgid "Line: click its corners, or drag a rectangle"
+msgstr "Linha: clique nos cantos ou arraste um retângulo"
+
+msgid "Local and global labels of one name"
+msgstr "Rótulos local e global com o mesmo nome"
+
+msgid "Made {0}-gerbers.zip, -bom.csv and -positions.csv in {1}, zones filled first"
+msgstr "Gerados {0}-gerbers.zip, -bom.csv e -positions.csv em {1}, com as zonas preenchidas antes"
+
+msgid "Made {0}-gerbers.zip, -bom.csv and -positions.csv in {1}, zones filled first; the previous ones are kept as <file>-bak"
+msgstr "Gerados {0}-gerbers.zip, -bom.csv e -positions.csv em {1}, com as zonas preenchidas antes; os anteriores ficam como <arquivo>-bak"
+
+msgid "Make"
+msgstr "Fabricar"
+
+msgid "Make has them and the fabs to order from"
+msgstr "Fabricar tem os arquivos e as fábricas onde encomendar"
+
+msgid "Make one from a package"
+msgstr "Fazer um a partir de um encapsulamento"
+
+msgid "Make the local label global, or rename it."
+msgstr "Torne global o rótulo local, ou renomeie-o."
+
+msgid "Make the resistor 120 Ω"
+msgstr "Ajuste o resistor para 120 Ω"
+
+msgid "Makes a part of your own: its symbol from its pins, its footprint from a package's numbers or the libraries', into the project's own library, which KiCad reads too"
+msgstr "Faz uma peça sua: o símbolo a partir dos pinos, o footprint a partir das medidas de um encapsulamento ou das bibliotecas, na biblioteca própria do projeto, que o KiCad também lê"
+
+msgid "Makes it the active copper layer, drawn on top; while routing, the track goes on there from a via"
+msgstr "Torna-a a camada de cobre ativa, desenhada por cima; durante o roteamento, a trilha continua nela a partir de uma via"
+
+msgid "Match {0}: {1}"
+msgstr "Igualar a {0}: {1}"
+
+msgid "Maximize"
+msgstr "Maximizar"
+
+msgid "Measure"
+msgstr "Medir"
+
+msgid "Millimetres"
+msgstr "Milímetros"
+
+msgid "Mils"
+msgstr "Mils"
+
+msgid "Minimize"
+msgstr "Minimizar"
+
+msgid "Minimum width"
+msgstr "Largura mínima"
+
+msgid "Mirror"
+msgstr "Espelhar"
+
+msgid "Mirror up and down"
+msgstr "Espelhar na vertical"
+
+msgid "Mirrors what is picked left to right, in place as KiCad's Mirror Horizontally: a pin that takes another's place takes its wires"
+msgstr "Espelha o que está selecionado da esquerda para a direita, no lugar, como o Espelhar Horizontalmente do KiCad: um pino que ocupa o lugar de outro fica com os fios dele"
+
+msgid "Mirrors what is picked top to bottom, in place as KiCad's Mirror Vertically"
+msgstr "Espelha o que está selecionado de cima para baixo, no lugar, como o Espelhar Verticalmente do KiCad"
+
+msgid "Motion"
+msgstr "Movimento"
+
+msgid "Move it at least {0} from the hole"
+msgstr "Afaste-o pelo menos {0} do furo"
+
+msgid "Move it inside the board: the edge cuts it"
+msgstr "Leve para dentro da placa: a borda corta"
+
+msgid "Move it onto the end of the pin it marks, or delete it."
+msgstr "Mova-a para a ponta do pino que ela marca, ou exclua-a."
+
+msgid "Move one of them: where they cross neither reads"
+msgstr "Mova um deles: onde se cruzam nenhum fica legível"
+
+msgid "Move the text or the part: the fab leaves ink off pads"
+msgstr "Mova o texto ou o componente: a fábrica não imprime sobre pads"
+
+msgid "Move them apart, or give the pad a smaller solder mask margin"
+msgstr "Afaste-os, ou dê ao pad uma margem de máscara de solda menor"
+
+msgid "Move {0} and {1} apart until their courtyards clear"
+msgstr "Afaste {0} e {1} até que seus pátios não se sobreponham"
+
+msgid "Move {0} at least {1} from Edge.Cuts"
+msgstr "Afaste {0} pelo menos {1} de Edge.Cuts"
+
+msgid "Moves what is picked one grid step down"
+msgstr "Move o que está selecionado um passo da grade para baixo"
+
+msgid "Moves what is picked one grid step left"
+msgstr "Move o que está selecionado um passo da grade para a esquerda"
+
+msgid "Moves what is picked one grid step right"
+msgstr "Move o que está selecionado um passo da grade para a direita"
+
+msgid "Moves what is picked one grid step up"
+msgstr "Move o que está selecionado um passo da grade para cima"
+
+msgid "N steps the grid, Shift+N back. Dragged parts, the tools' points and tracks snap to it, or to the copper under the pointer; hold Ctrl to place off it"
+msgstr "N avança o passo da grade, Shift+N volta. Peças arrastadas, os pontos das ferramentas e as trilhas se encaixam nela, ou no cobre sob o ponteiro; segure Ctrl para posicionar fora dela"
+
+msgid "Name"
+msgstr "Nome"
+
+msgid "Name the wire after a member of the bus, or remove the entry."
+msgstr "Dê ao fio o nome de um membro do barramento, ou remova a entrada."
+
+msgid "Names a net on every sheet: type its name, then click a pin or wire"
+msgstr "Nomeia uma rede em todas as folhas: digite o nome e clique em um pino ou fio"
+
+msgid "Names a net: type its name, then click a pin or wire"
+msgstr "Nomeia uma rede: digite o nome e clique em um pino ou fio"
+
+msgid "Names alike but in case"
+msgstr "Nomes iguais, salvo maiúsculas"
+
+msgid "Narrower track"
+msgstr "Trilha mais estreita"
+
+msgid "Net"
+msgstr "Rede"
+
+msgid "Net classes"
+msgstr "Classes de rede"
+
+msgid "Net length"
+msgstr "Comprimento da rede"
+
+msgid "Net name, then Enter"
+msgstr "Nome da rede, Enter"
+
+msgid "Net {0} enters bus {1} through a bus entry but isn't one of its members."
+msgstr "Rede {0} entra no barramento {1} por uma entrada de barramento, mas não é um dos membros dele."
+
+msgid "Net {0}, on {1}: {2}"
+msgstr "Rede {0}, em {1}: {2}"
+
+msgid "Nets"
+msgstr "Redes"
+
+msgid "Nets not of their bus"
+msgstr "Redes fora do seu barramento"
+
+msgid "Nets of two names"
+msgstr "Redes com dois nomes"
+
+msgid "New chat"
+msgstr "Nova conversa"
+
+msgid "New class"
+msgstr "Nova classe"
+
+msgid "New part"
+msgstr "Nova peça"
+
+msgid "New part…"
+msgstr "Nova peça…"
+
+msgid "New project"
+msgstr "Novo projeto"
+
+msgid "New sheet"
+msgstr "Nova folha"
+
+msgid "New to boards? Light an LED from a coin cell, step by step ›"
+msgstr "Novo em placas? Acenda um LED com uma bateria de moeda, passo a passo ›"
+
+msgid "New, open and recent projects, and KiCad's examples"
+msgstr "Projetos novos, abertos e recentes, e os exemplos do KiCad"
+
+msgid "Next grid"
+msgstr "Próxima grade"
+
+msgid "Next layer"
+msgstr "Próxima camada"
+
+msgid "Next to the board, once the project has one."
+msgstr "Ao lado da placa, quando o projeto tiver uma."
+
+msgid "No 3D models"
+msgstr "Nenhum modelo 3D"
+
+msgid "No KiCad libraries: install KiCad to add parts from them"
+msgstr "Sem bibliotecas do KiCad: instale o KiCad para adicionar peças delas"
+
+msgid "No board beside the schematic: {0} isn't there"
+msgstr "Nenhuma placa ao lado do esquemático: {0} não existe"
+
+msgid "No board outline"
+msgstr "Sem contorno de placa"
+
+msgid "No closed board outline"
+msgstr "Nenhum contorno de placa fechado"
+
+msgid "No command has “{0}”"
+msgstr "Nenhum comando tem “{0}”"
+
+msgid "No connect"
+msgstr "Não conectado"
+
+msgid "No connect: a click flags the pin there as left unconnected on purpose, a click on a flag takes it away; Esc stops"
+msgstr "Não conectado: um clique marca o pino ali como deixado desconectado de propósito, um clique numa marca a retira; Esc para"
+
+msgid "No connects"
+msgstr "Marcas de não conectado"
+
+msgid "No edits to save"
+msgstr "Nenhuma edição para salvar"
+
+msgid "No pad, via or track end of {0} within 5 mm of this one on {1}"
+msgstr "Nenhum pad, via ou ponta de trilha de {0} a até 5 mm deste em {1}"
+
+msgid "No parts on the board yet"
+msgstr "Nenhuma peça na placa ainda"
+
+msgid "No room for a sheet's box on this sheet: drag one where you want it (Shift+S)"
+msgstr "Não há espaço para a caixa de uma folha nesta folha: arraste uma onde quiser (Shift+S)"
+
+msgid "No room for a via here: {0}"
+msgstr "Sem espaço para uma via aqui: {0}"
+
+msgid "No room for the meander on either side of this track: {0}"
+msgstr "Sem espaço para o meandro em nenhum dos lados desta trilha: {0}"
+
+msgid "No schematic beside the board: {0} isn't there"
+msgstr "Nenhum esquemático ao lado da placa: {0} não existe"
+
+msgid "No-connect flag"
+msgstr "Marca de não conectado"
+
+msgid "No-connect flag added"
+msgstr "Marca de não conectado adicionada"
+
+msgid "No-connect flag removed"
+msgstr "Marca de não conectado retirada"
+
+msgid "No-connect flags on no pin"
+msgstr "Marcas de não conectado fora de pino"
+
+msgid "No-connect pins wired"
+msgstr "Pinos marcados como não conectados, mas ligados"
+
+msgid "Noise"
+msgstr "Ruído"
+
+msgid "None"
+msgstr "Nenhuma"
+
+msgid "None yet: Make writes them (Ctrl+P)"
+msgstr "Nenhum ainda: Fabricar os grava (Ctrl+P)"
+
+msgid "Not connected"
+msgstr "Não conectado"
+
+msgid "Not in KiCad's libraries? Download its KiCad zip from one of these, then add it:"
+msgstr "Não está nas bibliotecas do KiCad? Baixe o zip do KiCad dela de um destes sites e depois adicione-o:"
+
+msgid "Not saved: {0}"
+msgstr "Não salvo: {0}"
+
+msgid "Not simulated"
+msgstr "Não simulado"
+
+msgid "Notes"
+msgstr "Notas"
+
+msgid "Nothing is called “{0}”"
+msgstr "Nada se chama “{0}”"
+
+msgid "Nothing on the board is called {0}"
+msgstr "Nada na placa se chama {0}"
+
+msgid "Nothing to lay yet: lead the pair away from its pads"
+msgstr "Nada a traçar ainda: leve o par para longe dos pads"
+
+msgid "Nothing to paste: pick something and copy it (Ctrl+C) first"
+msgstr "Nada para colar: selecione algo e copie (Ctrl+C) primeiro"
+
+msgid "Nothing to redo"
+msgstr "Nada a refazer"
+
+msgid "Nothing to undo"
+msgstr "Nada a desfazer"
+
+msgid "Nudge down"
+msgstr "Deslocar para baixo"
+
+msgid "Nudge left"
+msgstr "Deslocar para a esquerda"
+
+msgid "Nudge right"
+msgstr "Deslocar para a direita"
+
+msgid "Nudge up"
+msgstr "Deslocar para cima"
+
+msgid "Number"
+msgstr "Número"
+
+msgid "O, then drag a rectangle where the board goes"
+msgstr "O, depois arraste um retângulo onde a placa fica"
+
+msgid "Ollama at {0} closed the connection"
+msgstr "O Ollama em {0} fechou a conexão"
+
+msgid "Ollama at {0}: {1}"
+msgstr "Ollama em {0}: {1}"
+
+msgid "Ollama has no model that can look things up: pull one, e.g. `ollama pull gemma4` (Ollama's app can too), then ask again"
+msgstr "O Ollama não tem um modelo capaz de fazer consultas: baixe um, p. ex. `ollama pull gemma4` (o app do Ollama também baixa), e pergunte de novo"
+
+msgid "Ollama isn't running: Ask needs it"
+msgstr "O Ollama não está rodando: Perguntar precisa dele"
+
+msgid "Ollama runs, with no model that looks things up: ollama pull gemma4"
+msgstr "O Ollama roda, sem um modelo que faça consultas: ollama pull gemma4"
+
+msgid "Ollama's list of models isn't JSON: update Ollama"
+msgstr "A lista de modelos do Ollama não é JSON: atualize o Ollama"
+
+msgid "Ollama, on this computer"
+msgstr "Ollama, neste computador"
+
+msgid "Ollama, to Ask: {0}"
+msgstr "Ollama, para Perguntar: {0}"
+
+msgid "On a sheet below the root, joins a net to the sheet above through the pin of its name, which the sheet's box gets: type its name, then click a pin or wire"
+msgstr "Numa folha abaixo da raiz, liga uma rede à folha de cima pelo pino com o mesmo nome, que a caixa da folha ganha: digite o nome e clique em um pino ou fio"
+
+msgid "On the board"
+msgstr "Na placa"
+
+msgid "One bus has {0} names, {1}; it takes {2}."
+msgstr "Um barramento tem {0} nomes, {1}; ele fica com {2}."
+
+msgid "One net has {0} names, {1}; it takes {2}."
+msgstr "Uma rede tem {0} nomes, {1}; ela fica com {2}."
+
+msgid "One thing before you order"
+msgstr "Uma coisa antes do pedido"
+
+msgid "Only the next step"
+msgstr "Só o próximo passo"
+
+msgid "Open"
+msgstr "Abrir"
+
+msgid "Open a KiCad project"
+msgstr "Abrir um projeto do KiCad"
+
+msgid "Open a board or a .kicad_sch first"
+msgstr "Abra uma placa ou um .kicad_sch primeiro"
+
+msgid "Open a board or a schematic to add parts to it."
+msgstr "Abra uma placa ou um esquemático para adicionar peças."
+
+msgid "Open a board to inspect it."
+msgstr "Abra uma placa para inspecioná-la."
+
+msgid "Open a fab's order page and drop the zip:"
+msgstr "Abra a página de pedido de uma fábrica e solte o zip nela:"
+
+msgid "Open a project first: a part dropped goes into its own library"
+msgstr "Abra um projeto primeiro: uma peça solta vai para a biblioteca própria dele"
+
+msgid "Open collector"
+msgstr "Coletor aberto"
+
+msgid "Open emitter"
+msgstr "Emissor aberto"
+
+msgid "Open in 3D"
+msgstr "Abrir em 3D"
+
+msgid "Open the saved board"
+msgstr "Abrir a placa salva"
+
+msgid "Open the saved schematic"
+msgstr "Abrir o esquemático salvo"
+
+msgid "Opens a KiCad project: its .kicad_pro, .kicad_pcb or .kicad_sch"
+msgstr "Abre um projeto do KiCad: o .kicad_pro, o .kicad_pcb ou o .kicad_sch"
+
+msgid "Opens the folder: the recent projects, their pictures, these settings"
+msgstr "Abre a pasta: os projetos recentes, as imagens deles, estas configurações"
+
+msgid "Opens the page in this computer's browser"
+msgstr "Abre a página no navegador deste computador"
+
+msgid "Open…"
+msgstr "Abrir…"
+
+msgid "Operating point"
+msgstr "Ponto de operação"
+
+msgid "Order"
+msgstr "Pedido"
+
+msgid "Outline"
+msgstr "Contorno"
+
+msgid "Outline: drag a rectangle, or click its corners"
+msgstr "Contorno: arraste um retângulo ou clique nos cantos"
+
+msgid "Outline: {0}"
+msgstr "Contorno: {0}"
+
+msgid "Output"
+msgstr "Saída"
+
+msgid "PINS"
+msgstr "PINOS"
+
+msgid "PREVIEW"
+msgstr "PRÉVIA"
+
+msgid "Pad"
+msgstr "Pad"
+
+msgid "Pad centre to centre across the package: from row to row, or side to side"
+msgstr "De centro a centro dos pads através do encapsulamento: de fileira a fileira, ou de lado a lado"
+
+msgid "Pad centre to centre along a row"
+msgstr "De centro a centro dos pads ao longo de uma fileira"
+
+msgid "Pad connection"
+msgstr "Conexão dos pads"
+
+msgid "Pads"
+msgstr "Pads"
+
+msgid "Pads {0} and {1} are closer than 0.1 mm: make the pads smaller, or the pitch or span bigger"
+msgstr "Os pads {0} e {1} estão a menos de 0,1 mm: diminua os pads, ou aumente o passo ou o vão"
+
+msgid "Pads {0} and {1} overlap: make the pads smaller, or the pitch or span bigger"
+msgstr "Os pads {0} e {1} se sobrepõem: diminua os pads, ou aumente o passo ou o vão"
+
+msgid "Page"
+msgstr "Página"
+
+msgid "Page on {0}"
+msgstr "Página em {0}"
+
+msgid "Pair gap"
+msgstr "Vão do par"
+
+msgid "Pair width"
+msgstr "Largura do par"
+
+msgid "Pair with"
+msgstr "Par com"
+
+msgid "Pair {0} and {1} routed: {2} and {3} long"
+msgstr "Par {0} e {1} roteado: {2} e {3} de comprimento"
+
+msgid "Pair {0} and {1}: {2}"
+msgstr "Par {0} e {1}: {2}"
+
+msgid "Pair {0} and {1}: {2} · {3} and {4} long"
+msgstr "Par {0} e {1}: {2} · {3} e {4} de comprimento"
+
+msgid "Pair: click a pad, via or track end of a differential pair"
+msgstr "Par: clique num pad, via ou ponta de trilha de um par diferencial"
+
+msgid "Part"
+msgstr "Peça"
+
+msgid "Parts"
+msgstr "Peças"
+
+msgid "Parts come from KiCad's libraries on your computer: add them in the desktop app"
+msgstr "As peças vêm das bibliotecas do KiCad no seu computador: adicione-as no app para desktop"
+
+msgid "Parts not numbered"
+msgstr "Peças sem número"
+
+msgid "Parts overlapping"
+msgstr "Peças sobrepostas"
+
+msgid "Pass the design rules"
+msgstr "Cumpra as regras de projeto"
+
+msgid "Passive"
+msgstr "Passivo"
+
+msgid "Paste"
+msgstr "Colar"
+
+msgid "Paste: a click puts it down, Esc drops it"
+msgstr "Colar: um clique coloca, Esc descarta"
+
+msgid "Pastes what was copied, here or in KiCad: it follows the pointer until a click puts it down, its parts numbered on"
+msgstr "Cola o que foi copiado, aqui ou no KiCad: segue o ponteiro até um clique colocar, com os componentes numerados em sequência"
+
+msgid "Pen"
+msgstr "Traço"
+
+msgid "Pick one from the libraries"
+msgstr "Escolher um das bibliotecas"
+
+msgid "Pick the folder the project's folder goes in"
+msgstr "Escolha a pasta onde fica a pasta do projeto"
+
+msgid "Pick the run"
+msgstr "Selecionar o trecho"
+
+msgid "Picked: {0}"
+msgstr "Selecionado: {0}"
+
+msgid "Picks the whole run of the tracks picked: their segments end to end, up to pads, vias and branches (KiCad's U)"
+msgstr "Seleciona o trecho inteiro das trilhas selecionadas: os segmentos ponta a ponta, até pads, vias e ramificações (o U do KiCad)"
+
+msgid "Pin header"
+msgstr "Barra de pinos"
+
+msgid "Pin header, 2 rows"
+msgstr "Barra de pinos, 2 fileiras"
+
+msgid "Pin names"
+msgstr "Nomes de pinos"
+
+msgid "Pin number {0} is on rows {1} and {2}: give each pin its own"
+msgstr "O número de pino {0} está nas linhas {1} e {2}: dê a cada pino o seu"
+
+msgid "Pin numbers"
+msgstr "Números de pinos"
+
+msgid "Pin {0} has no pad: the footprint's are numbered 1 to {1}"
+msgstr "O pino {0} não tem pad: os do footprint vão de 1 a {1}"
+
+msgid "Pins in conflict"
+msgstr "Pinos em conflito"
+
+msgid "Pins not connected"
+msgstr "Pinos não conectados"
+
+msgid "Pitch"
+msgstr "Passo"
+
+msgid "Place the parts inside it"
+msgstr "Posicione as peças dentro dele"
+
+msgid "Placement"
+msgstr "Posições"
+
+msgid "Polygon"
+msgstr "Polígono"
+
+msgid "Portrait: its short side across"
+msgstr "Retrato: o lado curto na horizontal"
+
+msgid "Power input"
+msgstr "Entrada de alimentação"
+
+msgid "Power output"
+msgstr "Saída de alimentação"
+
+msgid "Power pins nothing drives"
+msgstr "Pinos de alimentação que nada alimenta"
+
+msgid "Power {0} mW  |  Peak {1} A/mm²"
+msgstr "Potência {0} mW  |  Pico {1} A/mm²"
+
+msgid "Press A to add a part: a resistor, an LM358, a USB-C connector, or a part number. W wires, L names a net."
+msgstr "Pressione A para adicionar uma peça: um resistor, um LM358, um conector USB-C ou um número de peça. W desenha fios, L nomeia uma rede."
+
+msgid "Press F8 to bring in the schematic's parts, or A to add one: mounting holes, test points, a logo."
+msgstr "Pressione F8 para trazer as peças do esquemático, ou A para adicionar uma: furos de fixação, pontos de teste, um logotipo."
+
+msgid "Previous grid"
+msgstr "Grade anterior"
+
+msgid "Previous layer"
+msgstr "Camada anterior"
+
+msgid "Priority"
+msgstr "Prioridade"
+
+msgid "Priority {0} isn't a whole number: type 0 or more (the higher fills first)"
+msgstr "Prioridade {0} não é um número inteiro: digite 0 ou mais (a maior preenche primeiro)"
+
+msgid "Project"
+msgstr "Projeto"
+
+msgid "Projects you open show here, with a picture of their board."
+msgstr "Os projetos que você abrir aparecem aqui, com uma imagem da placa."
+
+msgid "Put it on a wire or pin end of its net, or delete it."
+msgstr "Ponha-o num fio ou na ponta de um pino da rede dele, ou exclua-o."
+
+msgid "Puts back the last edit undone"
+msgstr "Refaz a última edição desfeita"
+
+msgid "Puts each part's reference where it reads: upright, 1 mm high, just outside the part, off pads, other silkscreen and the board's edge, else hidden; and its value inside the part on the Fab layer. The parts picked, else all. On a sheet, each symbol's reference and value beside it, clear of its pins, wires and labels"
+msgstr "Põe a referência de cada peça onde dá para lê-la: a 0° ou 90°, com 1 mm de altura, logo fora da peça, longe dos pads, da outra serigrafia e da borda da placa, senão a oculta; e o valor dentro da peça, na camada Fab. As peças selecionadas, ou todas. Numa folha, a referência e o valor de cada símbolo ao lado dele, longe dos pinos, fios e rótulos"
+
+msgid "Puts the parts picked on the other side of the board, mirrored together, as KiCad's Flip does"
+msgstr "Põe as peças selecionadas do outro lado da placa, espelhadas juntas, como faz o Virar do KiCad"
+
+msgid "Reading {0} 3D models…"
+msgstr "Lendo {0} modelos 3D…"
+
+msgid "Ready to make"
+msgstr "Pronto para fabricar"
+
+msgid "Ready to order"
+msgstr "Pronto para pedir"
+
+msgid "Recent"
+msgstr "Recentes"
+
+msgid "Redo"
+msgstr "Refazer"
+
+msgid "Redone: {0}"
+msgstr "Refeito: {0}"
+
+msgid "Reduced"
+msgstr "Reduzido"
+
+msgid "Reference"
+msgstr "Referência"
+
+msgid "References"
+msgstr "Referências"
+
+msgid "References used twice"
+msgstr "Referências repetidas"
+
+msgid "Remove the flag if the pin is meant to connect, else what connects to it."
+msgstr "Remova a marca se o pino deve se conectar; senão, remova o que se conecta a ele."
+
+msgid "Restore"
+msgstr "Restaurar"
+
+msgid "Restored the unsaved edits of {0}; Ctrl+S saves them"
+msgstr "Edições não salvas de {0} restauradas; Ctrl+S as salva"
+
+msgid "Rev. {0}"
+msgstr "Rev. {0}"
+
+msgid "Revision"
+msgstr "Revisão"
+
+msgid "Right"
+msgstr "Direita"
+
+msgid "Right-click one to show its folder or forget it"
+msgstr "Clique com o botão direito em um para mostrar a pasta ou esquecê-lo"
+
+msgid "Rings too thin"
+msgstr "Anéis finos demais"
+
+msgid "Route"
+msgstr "Rotear"
+
+msgid "Route every connection"
+msgstr "Roteie todas as conexões"
+
+msgid "Route it on to a pad, via or track of its net, or delete it"
+msgstr "Leve-a até um pad, via ou trilha da rede dela, ou exclua-a"
+
+msgid "Route on from it on another layer, or delete it"
+msgstr "Continue a rota a partir dela em outra camada, ou exclua-a"
+
+msgid "Route pair"
+msgstr "Rotear par"
+
+msgid "Route: click a pad, via or track"
+msgstr "Rotear: clique em um pad, via ou trilha"
+
+msgid "Routes a differential pair: from a pad of one of its nets (D+ and D-, CLK_P and CLK_N), its two tracks side by side, as wide and as far apart as their net class says"
+msgstr "Roteia um par diferencial: a partir de um pad de uma de suas redes (D+ e D-, CLK_P e CLK_N), as duas trilhas lado a lado, com a largura e a distância da classe de rede"
+
+msgid "Routing {0} on {1}, {2}"
+msgstr "Roteando {0} em {1}, {2}"
+
+msgid "Rule area"
+msgstr "Área de regras"
+
+msgid "Rule area{0} on {1}"
+msgstr "Área de regras{0} em {1}"
+
+msgid "START FROM"
+msgstr "COMEÇAR DE"
+
+msgid "Save"
+msgstr "Salvar"
+
+msgid "Saved"
+msgstr "Salvo"
+
+msgid "Saved {0} in {1}"
+msgstr "{0} salvo em {1}"
+
+msgid "Saved {0} in {1}; the previous version is {0}-bak"
+msgstr "{0} salvo em {1}; a versão anterior é {0}-bak"
+
+msgid "Saved {0}; each previous version is <file>-bak"
+msgstr "Salvo: {0}; cada versão anterior fica como <arquivo>-bak"
+
+msgid "Schematic"
+msgstr "Esquemático"
+
+msgid "Schematic PDF"
+msgstr "PDF do esquemático"
+
+msgid "Schematic checks pass"
+msgstr "O esquemático passa nas verificações"
+
+msgid "Select"
+msgstr "Selecionar"
+
+msgid "Select the zone to cut first: click its fill or outline"
+msgstr "Selecione antes a zona a recortar: clique no preenchimento ou no contorno dela"
+
+msgid "Separate drilled holes by at least {0}"
+msgstr "Afaste os furos pelo menos {0} entre si"
+
+msgid "Separate items by at least {0}"
+msgstr "Afaste os itens pelo menos {0}"
+
+msgid "Set the pin's electrical type in its symbol."
+msgstr "Defina o tipo elétrico do pino no símbolo dele."
+
+msgid "Settings"
+msgstr "Configurações"
+
+msgid "Share"
+msgstr "Compartilhar"
+
+msgid "Sheet"
+msgstr "Folha"
+
+msgid "Sheet files"
+msgstr "Arquivos de folhas"
+
+msgid "Sheet names"
+msgstr "Nomes de folhas"
+
+msgid "Sheet pin {0} of sheet {1} connects to nothing here."
+msgstr "Pino de folha {0} da folha {1} não se conecta a nada aqui."
+
+msgid "Sheet pin {0} of sheet {1} has no hierarchical label {0} inside {2}."
+msgstr "Pino de folha {0} da folha {1} não tem rótulo hierárquico {0} dentro de {2}."
+
+msgid "Sheet pins"
+msgstr "Pinos de folhas"
+
+msgid "Sheet pins and labels without each other"
+msgstr "Pinos de folha e rótulos sem par"
+
+msgid "Sheet {0} ({1}) added"
+msgstr "Folha {0} ({1}) adicionada"
+
+msgid "Sheet: drag across, so its box has a width and a height; Esc stops"
+msgstr "Folha: arraste na diagonal, para a caixa ter largura e altura; Esc para"
+
+msgid "Sheet: drag its box on the sheet; Esc stops"
+msgstr "Folha: arraste a caixa dela nesta folha; Esc para"
+
+msgid "Sheet: its name and file, then Enter"
+msgstr "Folha: o nome e o arquivo dela, depois Enter"
+
+msgid "Sheets"
+msgstr "Folhas"
+
+msgid "Shift+B ticks the parts off as you place them by hand."
+msgstr "Shift+B marca as peças conforme você as monta à mão."
+
+msgid "Shove or walk round"
+msgstr "Empurrar ou contornar"
+
+msgid "Show"
+msgstr "Mostrar"
+
+msgid "Show it"
+msgstr "Mostrar"
+
+msgid "Show its folder"
+msgstr "Mostrar a pasta"
+
+msgid "Show the hidden pins and wire it, or flag it no-connect."
+msgstr "Mostre os pinos ocultos e ligue-o com um fio, ou marque-o como não conectado."
+
+msgid "Shows lengths in mils, or in millimetres again; files keep KiCad's millimetres"
+msgstr "Mostra os comprimentos em mils, ou de novo em milímetros; os arquivos mantêm os milímetros do KiCad"
+
+msgid "Shows the board from the back (F, unless only parts are picked)"
+msgstr "Mostra a placa por trás (F, a não ser que só peças estejam selecionadas)"
+
+msgid "Shows the project on a web page a phone or another computer opens by its QR code or address, to look at; again hides the code"
+msgstr "Mostra o projeto numa página web que um celular ou outro computador abre pelo QR Code ou pelo endereço, só para ver; de novo, esconde o código"
+
+msgid "Shows the whole board with its parts (those beside it too), sheet or 3D view"
+msgstr "Mostra a placa inteira com as peças (também as que estão ao lado), a folha ou a vista 3D"
+
+msgid "Shows this text on the board again, picked to drag into place"
+msgstr "Mostra este texto de novo na placa, selecionado para arrastar até o lugar"
+
+msgid "Side"
+msgstr "Lado"
+
+msgid "Silkscreen across the edge"
+msgstr "Serigrafia cruzando a borda"
+
+msgid "Silkscreen over pads"
+msgstr "Serigrafia sobre pads"
+
+msgid "Silkscreen over silkscreen"
+msgstr "Serigrafia sobre serigrafia"
+
+msgid "Simulate"
+msgstr "Simular"
+
+msgid "Simulates the schematic in ngspice as KiCad's simulator does: its parts' models, directives and workbook; S again stops it"
+msgstr "Simula o esquemático no ngspice como o simulador do KiCad faz: os modelos das peças, as diretivas e a pasta de trabalho; S de novo para"
+
+msgid "Simulating in ngspice: {0} s"
+msgstr "Simulando no ngspice: {0} s"
+
+msgid "Simulating in ngspice: {0}%, {1} s"
+msgstr "Simulando no ngspice: {0}%, {1} s"
+
+msgid "Since {0}: {1}"
+msgstr "Desde {0}: {1}"
+
+msgid "Six things before you order"
+msgstr "Seis coisas antes do pedido"
+
+msgid "Size"
+msgstr "Tamanho"
+
+msgid "Skew"
+msgstr "Descasamento"
+
+msgid "Smallest hole"
+msgstr "Menor furo"
+
+msgid "Smallest track / gap"
+msgstr "Menor trilha / folga"
+
+msgid "Solder mask bridges"
+msgstr "Pontes de máscara de solda"
+
+msgid "Solid"
+msgstr "Sólida"
+
+msgid "Span"
+msgstr "Vão"
+
+msgid "Spell them alike if they are one net, or rename one."
+msgstr "Escreva-os iguais se forem uma só rede, ou renomeie um deles."
+
+msgid "Spoke width"
+msgstr "Largura dos raios"
+
+msgid "Standing"
+msgstr "Em pé"
+
+msgid "Start a board"
+msgstr "Comece uma placa"
+
+msgid "Steps the track being routed to the next narrower of the project's track widths, never below the rules' minimum"
+msgstr "Passa a trilha em roteamento para a próxima largura menor do projeto, nunca abaixo do mínimo das regras"
+
+msgid "Steps the track being routed to the next wider of the project's track widths"
+msgstr "Passa a trilha em roteamento para a próxima largura maior do projeto"
+
+msgid "Stop (Esc)"
+msgstr "Parar (Esc)"
+
+msgid "Stop sharing"
+msgstr "Parar de compartilhar"
+
+msgid "Stops the tool on, the work in hand with it, to pick and move things again (Esc)"
+msgstr "Para a ferramenta em uso, junto com o trabalho em andamento, para voltar a selecionar e mover (Esc)"
+
+msgid "Supply the pin from a pin of the right type, or fix the types in the symbols."
+msgstr "Alimente o pino a partir de um pino do tipo certo, ou corrija os tipos nos símbolos."
+
+msgid "Swap bend"
+msgstr "Trocar a curva"
+
+msgid "Symbol fills"
+msgstr "Preenchimentos de símbolos"
+
+msgid "Symbols"
+msgstr "Símbolos"
+
+msgid "TIP"
+msgstr "DICA"
+
+msgid "Takes back the last edit"
+msgstr "Desfaz a última edição"
+
+msgid "Takes the page down: its address opens nothing after"
+msgstr "Tira a página do ar: depois o endereço não abre mais nada"
+
+msgid "Takes this pin away"
+msgstr "Tira este pino"
+
+msgid "Text"
+msgstr "Texto"
+
+msgid "Text \"{0}\" of {1}"
+msgstr "Texto \"{0}\" de {1}"
+
+msgid "Text \"{0}\" on {1}"
+msgstr "Texto \"{0}\" em {1}"
+
+msgid "Text {0}"
+msgstr "Texto {0}"
+
+msgid "Texts of {0} tidied"
+msgstr "Textos de {0} arrumados"
+
+msgid "Texts tidied: {0}; {1}"
+msgstr "Textos arrumados: {0}; {1}"
+
+msgid "That would make the zone's outline cross itself or a cutout: put the corner where its edges stay clear"
+msgstr "Isso faria o contorno da zona cruzar a si mesmo ou um recorte: ponha o canto onde as bordas dele fiquem livres"
+
+msgid "The LED is the wrong way round: its A (anode) faces the cell's −. Delete its wires and wire it the other way"
+msgstr "O LED está invertido: o A (ânodo) dele está voltado para o − da bateria. Exclua os fios dele e ligue-o ao contrário"
+
+msgid "The active copper layer, which tracks go on: PgUp, PgDn, + and − switch it"
+msgstr "A camada de cobre ativa, onde vão as trilhas: PgUp, PgDn, + e − a trocam"
+
+msgid "The assembler can't buy {0}"
+msgstr "A montadora não consegue comprar {0}"
+
+msgid "The board edge is in the way"
+msgstr "A borda da placa está no caminho"
+
+msgid "The board has no Edge.Cuts layer to draw its outline on: add it in KiCad"
+msgstr "A placa não tem camada Edge.Cuts para desenhar o contorno: adicione-a no KiCad"
+
+msgid "The board has no layer to draw on: add a silkscreen layer in KiCad"
+msgstr "A placa não tem camada para desenhar: adicione uma camada de serigrafia no KiCad"
+
+msgid "The board has no layer to write on: add a silkscreen layer in KiCad"
+msgstr "A placa não tem camada para escrever: adicione uma camada de serigrafia no KiCad"
+
+msgid "The board in 3D: drag turns it, right drag slides it, the wheel zooms, F turns it over"
+msgstr "A placa em 3D: arrastar gira, arrastar com o botão direito desliza, a roda dá zoom, F vira"
+
+msgid "The board is {0} behind the schematic"
+msgstr "A placa está {0} atrás do esquemático"
+
+msgid "The board shows here once the project has one."
+msgstr "A placa aparece aqui quando o projeto tiver uma."
+
+msgid "The board's design rule checks, the schematic's electrical rule checks, in plain words: hover one for its fix, click to see it"
+msgstr "As verificações de regras de projeto da placa e de regras elétricas do esquemático, em palavras simples: passe o ponteiro sobre uma para ver a correção, clique para vê-la"
+
+msgid "The board's grid step before, the other way round the list"
+msgstr "O passo de grade anterior da placa, percorrendo a lista ao contrário"
+
+msgid "The board's next grid step: 1, 0.5, 0.25, 0.1, 0.05 mm, then 100, 50, 25, 10, 5 mil, and round again"
+msgstr "O próximo passo de grade da placa: 1, 0,5, 0,25, 0,1, 0,05 mm, depois 100, 50, 25, 10, 5 mil, e de novo"
+
+msgid "The board; the part selected stays selected"
+msgstr "A placa; a peça selecionada continua selecionada"
+
+msgid "The body's length"
+msgstr "O comprimento do corpo"
+
+msgid "The body's width"
+msgstr "A largura do corpo"
+
+msgid "The browser downloads them."
+msgstr "O navegador os baixa."
+
+msgid "The drill"
+msgstr "O furo"
+
+msgid "The drill leaves too little copper round it: make the pad at least {0} mm"
+msgstr "O furo deixa pouco cobre em volta: faça o pad com pelo menos {0} mm"
+
+msgid "The exposed pad's length"
+msgstr "O comprimento do pad exposto"
+
+msgid "The exposed pad's width"
+msgstr "A largura do pad exposto"
+
+msgid "The fab can't cut the board without one"
+msgstr "A fábrica não consegue cortar a placa sem um"
+
+msgid "The hole through the pad"
+msgstr "O furo que atravessa o pad"
+
+msgid "The layer it is on: a back layer mirrors a text, to read from that side"
+msgstr "A camada em que está: numa camada de trás o texto fica espelhado, para ser lido daquele lado"
+
+msgid "The model in Ollama that answers"
+msgstr "O modelo do Ollama que responde"
+
+msgid "The net so far"
+msgstr "A rede até agora"
+
+msgid "The pad's length"
+msgstr "O comprimento do pad"
+
+msgid "The pad's width"
+msgstr "A largura do pad"
+
+msgid "The page shows the files as saved: Ctrl+S takes your edits there."
+msgstr "A página mostra os arquivos como foram salvos: Ctrl+S leva suas edições para lá."
+
+msgid "The pair arrives crossed: {0} would end on {1}. Bring it in from the other side"
+msgstr "O par chega cruzado: {0} terminaria em {1}. Traga-o pelo outro lado"
+
+msgid "The pair can't turn back that tightly: lead it round in a wider curve"
+msgstr "O par não consegue voltar tão fechado: conduza-o por uma curva mais aberta"
+
+msgid "The part wasn't added: {0}"
+msgstr "A peça não foi adicionada: {0}"
+
+msgid "The pin on row {0} has no number: give it one, as {0} or A1"
+msgstr "O pino da linha {0} não tem número: dê um a ele, como {0} ou A1"
+
+msgid "The pitch"
+msgstr "O passo"
+
+msgid "The project's schematic, read from the .kicad_sch beside the board; the part selected stays selected"
+msgstr "O esquemático do projeto, lido do .kicad_sch ao lado da placa; a peça selecionada continua selecionada"
+
+msgid "The reference prefix is letters, as U, J, D or Q: KiCad numbers the parts after it"
+msgstr "O prefixo de referência são letras, como U, J, D ou Q: o KiCad numera as peças depois dele"
+
+msgid "The schematic has unsaved edits. Save them first?"
+msgstr "O esquemático tem edições não salvas. Salvá-las antes?"
+
+msgid "The schematic's PDF wasn't written: {0}"
+msgstr "O PDF do esquemático não foi gravado: {0}"
+
+msgid "The schematic's connection grid, KiCad's"
+msgstr "A grade de conexão do esquemático, a do KiCad"
+
+msgid "The schematic's page in the window: dark as the board's, or light as KiCad's paper. A PDF is always light."
+msgstr "A página do esquemático na janela: escura como a da placa, ou clara como o papel do KiCad. Um PDF é sempre claro."
+
+msgid "The span"
+msgstr "O vão"
+
+msgid "The texts are tidy already: nothing moved"
+msgstr "Os textos já estão arrumados: nada mudou de lugar"
+
+msgid "The units lengths show in, and the language"
+msgstr "As unidades dos comprimentos e o idioma"
+
+msgid "The units lengths show in, the language, and your own Digi-Key key, which finds parts by number"
+msgstr "As unidades dos comprimentos, o idioma e a sua chave da Digi-Key, que encontra peças pelo número"
+
+msgid "The view glides to what you find, and the 3D view tilts up and turns on when let go; Reduced shows each change at once."
+msgstr "A vista desliza até o que você procura, e a vista 3D se inclina ao chegar e segue girando quando solta; Reduzido mostra cada mudança de uma vez."
+
+msgid "The way from an empty schematic to the fab's files, each step ticked off as the project gets there"
+msgstr "O caminho de um esquemático vazio aos arquivos da fábrica, cada passo marcado quando o projeto chega lá"
+
+msgid "The whole window, its checks and its guide; layer and field names stay as KiCad writes them (F.Cu, Value)."
+msgstr "A janela inteira, suas verificações e seu guia; nomes de camadas e campos ficam como o KiCad os escreve (F.Cu, Value)."
+
+msgid "Their names with commas between, or patterns: VBUS, /USB/D?, /DDR/*. A net's own Class, with the net lit, puts one in too."
+msgstr "Os nomes delas separados por vírgulas, ou padrões: VBUS, /USB/D?, /DDR/*. A Classe de uma rede, com a rede acesa, também coloca uma aqui."
+
+msgid "Thermal gap"
+msgstr "Folga térmica"
+
+msgid "Thermal reliefs"
+msgstr "Alívios térmicos"
+
+msgid "Thermal reliefs on through-hole pads"
+msgstr "Alívios térmicos nos pads passantes"
+
+msgid "They fill the title block in the sheet's corner, as the PDF prints it; ${VARIABLES} of the project are filled in."
+msgstr "Preenchem o bloco de título no canto da folha, como o PDF imprime; ${VARIÁVEIS} do projeto são substituídas."
+
+msgid "Thickness"
+msgstr "Espessura"
+
+msgid "Thinking…"
+msgstr "Pensando…"
+
+msgid "This computer is on no network: only it can open the address."
+msgstr "Este computador não está em nenhuma rede: só ele consegue abrir o endereço."
+
+msgid "This page shows the project as its files are, and follows them: nothing here changes them"
+msgstr "Esta página mostra o projeto como os arquivos estão, e os acompanha: nada aqui os altera"
+
+msgid "This project has no schematic to write: Ctrl+E shows why"
+msgstr "Este projeto não tem esquemático para gravar: Ctrl+E mostra por quê"
+
+msgid "This track has room for {0} of the {1} turns it would take ({2} more at most): pick a longer one, or tune another of its net too"
+msgstr "Esta trilha tem espaço para {0} das {1} voltas necessárias (no máximo mais {2}): escolha uma mais longa, ou ajuste também outra da mesma rede"
+
+msgid "Three things before you order"
+msgstr "Três coisas antes do pedido"
+
+msgid "Ticks off the parts as you place them by hand: a line marks its parts on the board"
+msgstr "Marca as peças conforme você as monta à mão: uma linha indica as peças dela na placa"
+
+msgid "Tidy texts"
+msgstr "Arrumar textos"
+
+msgid "Title"
+msgstr "Título"
+
+msgid "Top"
+msgstr "Em cima"
+
+msgid "Top layer"
+msgstr "Camada de cima"
+
+msgid "Track"
+msgstr "Trilha"
+
+msgid "Track ends on nothing"
+msgstr "Pontas de trilha soltas"
+
+msgid "Track width"
+msgstr "Largura de trilha"
+
+msgid "Track {0}on {1}"
+msgstr "Trilha {0}em {1}"
+
+msgid "Track {0}on {1}: width {2} < {3}"
+msgstr "Trilha {0}em {1}: largura {2} < {3}"
+
+msgid "Tracks too narrow"
+msgstr "Trilhas estreitas demais"
+
+msgid "Tracks · vias"
+msgstr "Trilhas · vias"
+
+msgid "Track{0}"
+msgstr "Trilha{0}"
+
+msgid "Track{0} on {1}"
+msgstr "Trilha{0} em {1}"
+
+msgid "Transfer function"
+msgstr "Função de transferência"
+
+msgid "Transient"
+msgstr "Transiente"
+
+msgid "Tri-state"
+msgstr "Três estados"
+
+msgid "Turn"
+msgstr "Girar"
+
+msgid "Turn back"
+msgstr "Girar ao contrário"
+
+msgid "Turned"
+msgstr "Rotação"
+
+msgid "Turns what is picked (several about their middle), or the symbol being placed, 90° counter-clockwise"
+msgstr "Gira o que está selecionado (vários em torno do centro deles), ou o símbolo sendo posicionado, 90° no sentido anti-horário"
+
+msgid "Turns what is picked 90° clockwise"
+msgstr "Gira o que está selecionado 90° no sentido horário"
+
+msgid "Two parts are named {0}: this one and one on sheet {1}."
+msgstr "Duas peças se chamam {0}: esta e uma na folha {1}."
+
+msgid "Two parts are named {0}: this one and one on the root sheet."
+msgstr "Duas peças se chamam {0}: esta e uma na folha raiz."
+
+msgid "Two parts are named {0}: this one and one on this sheet."
+msgstr "Duas peças se chamam {0}: esta e uma nesta folha."
+
+msgid "Two things before you order"
+msgstr "Duas coisas antes do pedido"
+
+msgid "Type"
+msgstr "Tipo"
+
+msgid "Undo"
+msgstr "Desfazer"
+
+msgid "Undone: {0}"
+msgstr "Desfeito: {0}"
+
+msgid "Units"
+msgstr "Unidades"
+
+msgid "Units: mm or mil"
+msgstr "Unidades: mm ou mil"
+
+msgid "Unspecified"
+msgstr "Não especificado"
+
+msgid "Update"
+msgstr "Atualizar"
+
+msgid "Update board"
+msgstr "Atualizar placa"
+
+msgid "Update the board (F8)"
+msgstr "Atualizar a placa (F8)"
+
+msgid "Updated from the schematic: nothing changed"
+msgstr "Atualizado a partir do esquemático: nada mudou"
+
+msgid "Updated from the schematic: {0}"
+msgstr "Atualizado a partir do esquemático: {0}"
+
+msgid "Values"
+msgstr "Valores"
+
+msgid "Via"
+msgstr "Via"
+
+msgid "Via added"
+msgstr "Via adicionada"
+
+msgid "Via drill"
+msgstr "Furo da via"
+
+msgid "Via size"
+msgstr "Tamanho da via"
+
+msgid "Vias"
+msgstr "Vias"
+
+msgid "Vias go"
+msgstr "Vias atravessam"
+
+msgid "Vias go through the board"
+msgstr "As vias atravessam a placa"
+
+msgid "Vias join only the layers a track goes between: blind or buried"
+msgstr "As vias ligam só as camadas entre as quais a trilha passa: cegas ou enterradas"
+
+msgid "Vias joined on one layer"
+msgstr "Vias ligadas em uma só camada"
+
+msgid "Vias too small"
+msgstr "Vias pequenas demais"
+
+msgid "Via{0}"
+msgstr "Via{0}"
+
+msgid "View only"
+msgstr "Somente leitura"
+
+msgid "W, then click from pin to pin; L names a net instead"
+msgstr "W, depois clique de pino em pino; L nomeia uma rede em vez disso"
+
+msgid "What changed since the board's last commit in git: added green, removed red"
+msgstr "O que mudou desde o último commit da placa no git: acrescentado em verde, removido em vermelho"
+
+msgid "What is U3? Any ERC errors? (Enter)"
+msgstr "O que é U3? Algum erro de ERC? (Enter)"
+
+msgid "What the fab needs: the checks left, the fab files, assembling by hand"
+msgstr "O que a fábrica precisa: as verificações que faltam, os arquivos de fabricação, a montagem à mão"
+
+msgid "What the text says; \\n breaks a line"
+msgstr "O que o texto diz; \\n quebra a linha"
+
+msgid "Where the new project goes"
+msgstr "Onde fica o novo projeto"
+
+msgid "While routing"
+msgstr "Durante o roteamento"
+
+msgid "While routing, a via joins only the layers the track goes between (blind or buried: ask the fab what they cost), or goes through the board"
+msgstr "Ao rotear, uma via liga só as camadas entre as quais a trilha passa (cega ou enterrada: pergunte ao fabricante quanto custam), ou atravessa a placa"
+
+msgid "While routing, other nets' tracks and vias make way for the track (KiCad's Shove), or it walks round them"
+msgstr "Durante o roteamento, as trilhas e vias de outras redes abrem caminho para a trilha (o Empurrar do KiCad), ou ela as contorna"
+
+msgid "Widen track on {0} to at least {1}"
+msgstr "Alargue a trilha em {0} para pelo menos {1}"
+
+msgid "Wider track"
+msgstr "Trilha mais larga"
+
+msgid "Width"
+msgstr "Largura"
+
+msgid "Width {0} isn't a length: type one in {1}, or as 0.3mm or 12mil"
+msgstr "Largura {0} não é um comprimento: digite um em {1}, ou como 0.3mm ou 12mil"
+
+msgid "Wire"
+msgstr "Fio"
+
+msgid "Wire added"
+msgstr "Fio adicionado"
+
+msgid "Wire ends on nothing"
+msgstr "Pontas de fio soltas"
+
+msgid "Wire it on this sheet, or delete the pin if nothing needs it."
+msgstr "Ligue-o com um fio nesta folha, ou exclua o pino se nada precisar dele."
+
+msgid "Wire it to its net, or put a no-connect flag on its end if it stays unused."
+msgstr "Ligue-o à rede dele com um fio, ou ponha uma marca de não conectado na ponta dele se ficar sem uso."
+
+msgid "Wire their pins"
+msgstr "Ligue os pinos delas"
+
+msgid "Wire them in a loop"
+msgstr "Ligue-os em circuito fechado"
+
+msgid "Wire: click to click · / turns its corner, Shift goes straight · a pin, a wire or Enter ends it · Esc stops"
+msgstr "Fio: de clique em clique · / vira o canto, Shift vai reto · um pino, um fio ou Enter o termina · Esc para"
+
+msgid "Wires"
+msgstr "Fios"
+
+msgid "Wires on nothing"
+msgstr "Fios sobre nada"
+
+msgid "Words, then Enter"
+msgstr "Palavras, Enter"
+
+msgid "Words: 0603, SOT-23, 3.5mm…"
+msgstr "Palavras: 0603, SOT-23, 3.5mm…"
+
+msgid "Workbenches"
+msgstr "Bancadas"
+
+msgid "Write it"
+msgstr "Gravar"
+
+msgid "Writes every sheet into one PDF beside the project, as KiCad numbers them, each with a frame and title block, and opens it"
+msgstr "Grava todas as folhas num PDF ao lado do projeto, numeradas como no KiCad, cada uma com moldura e legenda, e o abre"
+
+msgid "Writes on the silkscreen, or the layer chosen: type the words, Enter puts them in the middle of the view, picked to drag where they go"
+msgstr "Escreve na serigrafia, ou na camada escolhida: digite as palavras, Enter as coloca no meio da vista, selecionadas para arrastar até o lugar"
+
+msgid "Writes the edits into the board and sheet files; each previous version stays as <file>-bak"
+msgstr "Grava as edições nos arquivos da placa e das folhas; cada versão anterior fica como <arquivo>-bak"
+
+msgid "Writes {0}.kicad_pro, .kicad_sch and .kicad_pcb, which KiCad opens too."
+msgstr "Grava {0}.kicad_pro, .kicad_sch e .kicad_pcb, que o KiCad também abre."
+
+msgid "Wrote {0}, {1}, in {2}"
+msgstr "{0} gravado, {1}, em {2}"
+
+msgid "Wrote {0}, {1}, in {2}; the previous one is kept as {0}-bak"
+msgstr "{0} gravado, {1}, em {2}; o anterior fica como {0}-bak"
+
+msgid "X, then click a pad and follow its thin line to the next"
+msgstr "X, depois clique num pad e siga a linha fina dele até o próximo"
+
+msgid "Your first board"
+msgstr "Sua primeira placa"
+
+msgid "Your key is in DIGIKEY_CLIENT_ID and DIGIKEY_CLIENT_SECRET: Add part finds parts by number with it."
+msgstr "Sua chave está em DIGIKEY_CLIENT_ID e DIGIKEY_CLIENT_SECRET: Adicionar peça encontra peças pelo número com ela."
+
+msgid "Your own key, free, finds a part by its number in Add part: make an app with Product Information V4 at developer.digikey.com, then paste its Client ID and Secret here. Kept for you alone."
+msgstr "Sua própria chave, gratuita, encontra uma peça pelo número em Adicionar peça: crie um app com Product Information V4 em developer.digikey.com e cole aqui o Client ID e o Secret dele. Guardada só para você."
+
+msgid "Zone"
+msgstr "Zona"
+
+msgid "Zone ({0}) on {1}"
+msgstr "Zona ({0}) em {1}"
+
+msgid "Zone ({0}) on {1} added"
+msgstr "Zona ({0}) em {1} adicionada"
+
+msgid "Zone on {0}"
+msgstr "Zona em {0}"
+
+msgid "Zone on {0} added"
+msgstr "Zona em {0} adicionada"
+
+msgid "Zone: click a pad, via or track of its net"
+msgstr "Zona: clique em um pad, via ou trilha da rede dela"
+
+msgid "Zones"
+msgstr "Zonas"
+
+msgid "Zones filled"
+msgstr "Zonas preenchidas"
+
+msgid "Zones filled in {0}: no fill changed"
+msgstr "Zonas preenchidas em {0}: nenhum preenchimento mudou"
+
+msgid "Zone{0} on {1}"
+msgstr "Zona{0} em {1}"
+
+msgid "Zoom in on them (the wheel), then W from the cell's + to the resistor, the resistor to the LED's A, its K to the cell's −"
+msgstr "Aproxime-se deles (a roda), depois W do + da bateria ao resistor, do resistor ao A do LED, e do K dele ao − da bateria"
+
+msgid "Zoom to fit"
+msgstr "Ajustar à tela"
+
+msgid "a KiCad 5 schematic: open it in KiCad 6 or later, which converts it, then open the .kicad_sch"
+msgstr "um esquemático do KiCad 5: abra-o no KiCad 6 ou posterior, que o converte, e então abra o .kicad_sch"
+
+msgid "a behavioral source needs its expression: set it in its Sim.Params"
+msgstr "uma fonte comportamental precisa da sua expressão: defina-a no Sim.Params dela"
+
+msgid "a bidirectional pin"
+msgstr "um pino bidirecional"
+
+msgid "a bus needs two points at least one grid step (50 mil) apart"
+msgstr "um barramento precisa de dois pontos a pelo menos um passo da grade (50 mil) um do outro"
+
+msgid "a free pin"
+msgstr "um pino livre"
+
+msgid "a name is cut short"
+msgstr "um nome está cortado"
+
+msgid "a new item's net is not declared in the file"
+msgstr "a rede de um item novo não está declarada no arquivo"
+
+msgid "a new item's net is not on the board"
+msgstr "a rede de um item novo não está na placa"
+
+msgid "a new via spans no copper layer"
+msgstr "uma via nova não passa por nenhuma camada de cobre"
+
+msgid "a not-connected pin"
+msgstr "um pino não conectado"
+
+msgid "a pad's net is not declared in the file"
+msgstr "a rede de um pad não está declarada no arquivo"
+
+msgid "a passive pin"
+msgstr "um pino passivo"
+
+msgid "a pin of no stated type"
+msgstr "um pino sem tipo declarado"
+
+msgid "a power input"
+msgstr "uma entrada de alimentação"
+
+msgid "a power output"
+msgstr "uma saída de alimentação"
+
+msgid "a sheet named {0} is on this sheet already: give another name"
+msgstr "já há uma folha chamada {0} nesta folha: dê outro nome"
+
+msgid "a sheet's box needs a width and a height: drag across"
+msgstr "a caixa de uma folha precisa de largura e altura: arraste na diagonal"
+
+msgid "a symbol's library copy is missing from lib_symbols: open and save the sheet in KiCad, which restores it"
+msgstr "falta em lib_symbols a cópia de biblioteca de um símbolo: abra e salve a folha no KiCad, que a restaura"
+
+msgid "a tri-state output"
+msgstr "uma saída tri-state"
+
+msgid "a via without (at)"
+msgstr "uma via sem (at)"
+
+msgid "a wire can't reach {0} mm there without touching other wiring: move it elsewhere"
+msgstr "um fio não consegue chegar a {0} mm ali sem tocar em outras ligações: mova para outro lugar"
+
+msgid "a wire needs two points at least one grid step (50 mil) apart"
+msgstr "um fio precisa de dois pontos a pelo menos um passo da grade (50 mil) um do outro"
+
+msgid "an arc can't be dragged yet: delete it and route it again"
+msgstr "um arco ainda não pode ser arrastado: exclua-o e roteie-o de novo"
+
+msgid "an arc through three points in a line"
+msgstr "um arco por três pontos alinhados"
+
+msgid "an input"
+msgstr "uma entrada"
+
+msgid "an open-collector output"
+msgstr "uma saída de coletor aberto"
+
+msgid "an open-emitter output"
+msgstr "uma saída de emissor aberto"
+
+msgid "an outline needs 3 corners or more, not {0}"
+msgstr "um contorno precisa de 3 cantos ou mais, não {0}"
+
+msgid "an output"
+msgstr "uma saída"
+
+msgid "an unexpected reply"
+msgstr "uma resposta inesperada"
+
+msgid "and {0}"
+msgstr "e {0}"
+
+msgid "and {0} more"
+msgstr "e mais {0}"
+
+msgid "angle {0}: a bus entry turns by 0, 90, 180 or 270 degrees"
+msgstr "ângulo {0}: uma entrada de barramento gira 0, 90, 180 ou 270 graus"
+
+msgid "angle {0}: a label turns by 0, 90, 180 or 270 degrees"
+msgstr "ângulo {0}: um rótulo gira 0, 90, 180 ou 270 graus"
+
+msgid "angle {0}: a symbol turns by 0, 90, 180 or 270 degrees"
+msgstr "ângulo {0}: um símbolo gira 0, 90, 180 ou 270 graus"
+
+msgid "annular width"
+msgstr "anel anular"
+
+msgid "any angle"
+msgstr "qualquer ângulo"
+
+msgid "back"
+msgstr "trás"
+
+msgid "bad drill"
+msgstr "furo inválido"
+
+msgid "bad file name"
+msgstr "nome de arquivo inválido"
+
+msgid "bad length"
+msgstr "comprimento inválido"
+
+msgid "bad net"
+msgstr "rede inválida"
+
+msgid "bad net code"
+msgstr "código de rede inválido"
+
+msgid "bad number"
+msgstr "número inválido"
+
+msgid "bad priority"
+msgstr "prioridade inválida"
+
+msgid "bad version"
+msgstr "versão inválida"
+
+msgid "between the layers joined"
+msgstr "só as camadas ligadas"
+
+msgid "both sides"
+msgstr "dos dois lados"
+
+msgid "bottom"
+msgstr "de baixo"
+
+msgid "bottom only"
+msgstr "só embaixo"
+
+msgid "bus entry without one (at)"
+msgstr "entrada de barramento sem um (at)"
+
+msgid "can't back up {0} as {1}: {2}; nothing was written"
+msgstr "não foi possível fazer o backup de {0} como {1}: {2}; nada foi gravado"
+
+msgid "can't write {0}: {1}"
+msgstr "não foi possível gravar {0}: {1}"
+
+msgid "can't write {0}: {1}; the previous version is {2}"
+msgstr "não foi possível gravar {0}: {1}; a versão anterior é {2}"
+
+msgid "change"
+msgstr "alteração|alterações"
+
+msgid "clearance"
+msgstr "folga"
+
+msgid "clearance {0}"
+msgstr "folga {0}"
+
+msgid "connection left|connections left"
+msgstr "conexão restante|conexões restantes"
+
+msgid "connection not routed|connections not routed"
+msgstr "conexão não roteada|conexões não roteadas"
+
+msgid "copper edge clearance"
+msgstr "folga da borda"
+
+msgid "copper layer"
+msgstr "camada de cobre|camadas de cobre"
+
+msgid "corner"
+msgstr "canto|cantos"
+
+msgid "corner added"
+msgstr "canto adicionado"
+
+msgid "corner moved"
+msgstr "canto movido"
+
+msgid "corner removed"
+msgstr "canto removido"
+
+msgid "cutout added"
+msgstr "recorte adicionado"
+
+msgid "cutout removed"
+msgstr "recorte removido"
+
+msgid "day"
+msgstr "dia|dias"
+
+msgid "design rule problem"
+msgstr "problema de regra de projeto|problemas de regras de projeto"
+
+msgid "drag a corner or an edge's middle, or inside to move it, R turns, Shift+C cuts out, Del deletes"
+msgstr "arraste um canto ou o meio de uma borda, ou o interior para movê-la, R gira, Shift+C recorta, Del exclui"
+
+msgid "dragged that far, the track beside it would turn round: drag it less"
+msgstr "arrastando tanto, a trilha ao lado se inverteria: arraste menos"
+
+msgid "dragged that far, the track would turn round: drag it less"
+msgstr "arrastando tanto, a trilha se inverteria: arraste menos"
+
+msgid "draw the board's outline"
+msgstr "desenhe o contorno da placa"
+
+msgid "drawing"
+msgstr "desenho|desenhos"
+
+msgid "drill out of range"
+msgstr "furo fora da faixa"
+
+msgid "error"
+msgstr "erro|erros"
+
+msgid "every connection routed"
+msgstr "todas as conexões roteadas"
+
+msgid "expected a value"
+msgstr "esperava-se um valor"
+
+msgid "field"
+msgstr "campo|campos"
+
+msgid "field changed|fields changed"
+msgstr "campo alterado|campos alterados"
+
+msgid "file"
+msgstr "arquivo|arquivos"
+
+msgid "file {0}: give a file name ending in .kicad_sch, beside the root sheet (power.kicad_sch)"
+msgstr "arquivo {0}: dê um nome de arquivo terminado em .kicad_sch, ao lado da folha raiz (fonte.kicad_sch)"
+
+msgid "fill the zones"
+msgstr "preencha as zonas"
+
+msgid "fits its filters|fit its filters"
+msgstr "atende aos filtros|atendem aos filtros"
+
+msgid "fix the schematic's {0}"
+msgstr "corrija {0} do esquemático"
+
+msgid "fix {0}"
+msgstr "corrija {0}"
+
+msgid "footprint"
+msgstr "footprint|footprints"
+
+msgid "footprint changed|footprints changed"
+msgstr "footprint alterado|footprints alterados"
+
+msgid "footprint without a layer"
+msgstr "footprint sem camada"
+
+msgid "footprint without items"
+msgstr "footprint sem itens"
+
+msgid "from {0} · {1}"
+msgstr "de {0} · {1}"
+
+msgid "front"
+msgstr "frente"
+
+msgid "give {0} a part number"
+msgstr "dê um número de peça a {0}"
+
+msgid "green"
+msgstr "verde"
+
+msgid "hidden with no room|hidden with no room"
+msgstr "oculta por falta de espaço|ocultas por falta de espaço"
+
+msgid "hierarchical label {0}: the root sheet has no sheet above it to join; put it on a sheet below, or use a global label"
+msgstr "rótulo hierárquico {0}: a folha raiz não tem folha acima a que se ligar; ponha-o numa folha abaixo, ou use um rótulo global"
+
+msgid "hole to hole"
+msgstr "furo a furo"
+
+msgid "incomplete arc"
+msgstr "arco incompleto"
+
+msgid "incomplete graphic"
+msgstr "gráfico incompleto"
+
+msgid "incomplete track"
+msgstr "trilha incompleta"
+
+msgid "it gave no results"
+msgstr "não devolveu resultados"
+
+msgid "it unpacks to more than a gigabyte"
+msgstr "descompactado, passa de um gigabyte"
+
+msgid "item"
+msgstr "item|itens"
+
+msgid "its directory is broken"
+msgstr "o diretório dele está danificado"
+
+msgid "its directory is cut short"
+msgstr "o diretório dele está cortado"
+
+msgid "its end record is missing"
+msgstr "falta o registro final"
+
+msgid "its footprint {0} isn't in KiCad's footprint libraries: set its Footprint field to one of theirs"
+msgstr "o footprint dela, {0}, não está nas bibliotecas de footprints do KiCad: defina o campo Footprint como um delas"
+
+msgid "its model library {0} isn't installed: install KiCad's symbol libraries"
+msgstr "a biblioteca de modelos {0} dela não está instalada: instale as bibliotecas de símbolos do KiCad"
+
+msgid "its model library {0} isn't there: correct its Sim.Library"
+msgstr "a biblioteca de modelos {0} dela não está lá: corrija o Sim.Library dela"
+
+msgid "its model library {0}: {1} is not set; set it to the library's folder"
+msgstr "a biblioteca de modelos {0} dela: falta definir {1}; defina {1} como a pasta da biblioteca"
+
+msgid "its model {0} in {1} is a .model, not a .subckt: set its Sim.Device to the device"
+msgstr "o modelo {0} dela em {1} é um .model, não um .subckt: defina o Sim.Device dela como o dispositivo"
+
+msgid "its model {0} in {1} is a {2}, which Cuprita doesn't simulate yet"
+msgstr "o modelo {0} dela em {1} é um {2}, que o Cuprita ainda não simula"
+
+msgid "its model {0} isn't in {1}: correct its Sim.Name or Sim.Library"
+msgstr "o modelo {0} dela não está em {1}: corrija o Sim.Name ou o Sim.Library dela"
+
+msgid "its model, KiCad's {0} {1}, isn't simulated in Cuprita yet: give it a SPICE or library model, or tick Exclude from simulation"
+msgstr "o modelo dela, {0} {1} do KiCad, ainda não é simulado no Cuprita: dê a ela um modelo SPICE ou de biblioteca, ou marque Excluir da simulação"
+
+msgid "its own colour of"
+msgstr "de cor própria"
+
+msgid "its pin {0} isn't on a net"
+msgstr "o pino {0} dela não está numa rede"
+
+msgid "its simulation model is KiCad 6's: open and save the sheet in KiCad 7 or later, which converts it"
+msgstr "o modelo de simulação dela é do KiCad 6: abra e salve a folha no KiCad 7 ou posterior, que o converte"
+
+msgid "its source type {0} isn't simulated in Cuprita yet: pick another in its Simulation Model"
+msgstr "o tipo de fonte {0} dela ainda não é simulado no Cuprita: escolha outro no Modelo de simulação dela"
+
+msgid "its {0} model isn't simulated in Cuprita yet: give it a SPICE or library model, or tick Exclude from simulation"
+msgstr "o modelo {0} dela ainda não é simulado no Cuprita: dê a ela um modelo SPICE ou de biblioteca, ou marque Excluir da simulação"
+
+msgid "just now"
+msgstr "agora mesmo"
+
+msgid "label"
+msgstr "rótulo|rótulos"
+
+msgid "label {0}: give the net's name, one line of text (SDA, ~{RESET})"
+msgstr "rótulo {0}: dê o nome da rede, uma linha de texto (SDA, ~{RESET})"
+
+msgid "layer"
+msgstr "camada|camadas"
+
+msgid "letters {0} wide"
+msgstr "letras com {0} de largura"
+
+msgid "libngspice didn't start"
+msgstr "a libngspice não iniciou"
+
+msgid "libngspice lacks {0}: install a newer ngspice"
+msgstr "falta {0} na libngspice: instale um ngspice mais novo"
+
+msgid "line"
+msgstr "linha|linhas"
+
+msgid "line {0}: a text without its closing quote: the file is cut short"
+msgstr "linha {0}: um texto sem a aspa final: o arquivo está cortado"
+
+msgid "line {0}: expected '{1}'"
+msgstr "linha {0}: esperado '{1}'"
+
+msgid "line {0}: expected a number"
+msgstr "linha {0}: esperado um número"
+
+msgid "line {0}: expected a value"
+msgstr "linha {0}: esperado um valor"
+
+msgid "line {0}: expected an entity"
+msgstr "linha {0}: esperada uma entidade"
+
+msgid "line {0}: expected an entity number"
+msgstr "linha {0}: esperado um número de entidade"
+
+msgid "line {0}: lists nested deeper than a STEP file's go"
+msgstr "linha {0}: listas aninhadas além do que um arquivo STEP usa"
+
+msgid "list without a head"
+msgstr "lista sem cabeça"
+
+msgid "looking a part up at Digi-Key takes curl: install it"
+msgstr "consultar uma peça na Digi-Key requer o curl: instale-o"
+
+msgid "minimum width {0}"
+msgstr "largura mínima {0}"
+
+msgid "model"
+msgstr "modelo|modelos"
+
+msgid "more line"
+msgstr "linha a mais|linhas a mais"
+
+msgid "more part left as they were|more parts left as they were"
+msgstr "peça a mais ficou como estava|peças a mais ficaram como estavam"
+
+msgid "more than {0} tracks and vias would move"
+msgstr "mais de {0} trilhas e vias se moveriam"
+
+msgid "moved aside|moved aside"
+msgstr "afastada|afastadas"
+
+msgid "name"
+msgstr "nome"
+
+msgid "name taken away"
+msgstr "nome removido"
+
+msgid "name.kicad_sch"
+msgstr "nome.kicad_sch"
+
+msgid "named {0}"
+msgstr "nome {0}"
+
+msgid "name|names"
+msgstr "nome|nomes"
+
+msgid "needs {0}"
+msgstr "precisa de {0}"
+
+msgid "net"
+msgstr "rede|redes"
+
+msgid "net added|nets added"
+msgstr "rede adicionada|redes adicionadas"
+
+msgid "net renamed|nets renamed"
+msgstr "rede renomeada|redes renomeadas"
+
+msgid "net {0}"
+msgstr "rede {0}"
+
+msgid "net {0}  {1}"
+msgstr "rede {0}  {1}"
+
+msgid "ngspice can't read the netlist"
+msgstr "o ngspice não consegue ler a netlist"
+
+msgid "ngspice didn't run in KiCad's Flatpak: {0}"
+msgstr "o ngspice não rodou no Flatpak do KiCad: {0}"
+
+msgid "ngspice didn't start the simulation"
+msgstr "o ngspice não iniciou a simulação"
+
+msgid "ngspice isn't installed: install KiCad, which brings it, or ngspice's shared library (libngspice)"
+msgstr "o ngspice não está instalado: instale o KiCad, que o traz, ou a biblioteca compartilhada do ngspice (libngspice)"
+
+msgid "ngspice message"
+msgstr "mensagem do ngspice|mensagens do ngspice"
+
+msgid "ngspice ran no analysis"
+msgstr "o ngspice não rodou nenhuma análise"
+
+msgid "ngspice, to simulate"
+msgstr "ngspice, para simular"
+
+msgid "no (DNP)"
+msgstr "não (DNP)"
+
+msgid "no KiCad footprint libraries found: install KiCad, or set KICAD10_FOOTPRINT_DIR to its footprints folder"
+msgstr "nenhuma biblioteca de footprints do KiCad encontrada: instale o KiCad ou defina KICAD10_FOOTPRINT_DIR como a pasta de footprints dele"
+
+msgid "no KiCad symbol libraries found: install KiCad, or set KICAD10_SYMBOL_DIR to its symbols folder"
+msgstr "nenhuma biblioteca de símbolos do KiCad encontrada: instale o KiCad ou defina KICAD10_SYMBOL_DIR com a pasta de símbolos dele"
+
+msgid "no Ollama at {0}: install it from ollama.com (it then runs by itself), or start it with `ollama serve`"
+msgstr "nenhum Ollama em {0}: instale-o a partir de ollama.com (depois ele roda sozinho), ou inicie-o com `ollama serve`"
+
+msgid "no board file"
+msgstr "sem arquivo de placa"
+
+msgid "no closed outline"
+msgstr "sem contorno fechado"
+
+msgid "no file name"
+msgstr "sem nome de arquivo"
+
+msgid "no items given: pick a symbol, wire, label or no-connect flag"
+msgstr "nenhum item dado: selecione um símbolo, fio, rótulo ou marca de não conectado"
+
+msgid "no line {0} in a title block: it has {1}"
+msgstr "não há linha {0} num bloco de título: ele tem {1}"
+
+msgid "no net"
+msgstr "sem rede"
+
+msgid "no page {0}: the project has {1}"
+msgstr "não há página {0}: o projeto tem {1}"
+
+msgid "no paper {0}: KiCad's are {1}"
+msgstr "não há papel {0}: os do KiCad são {1}"
+
+msgid "no part {0} on the sheets"
+msgstr "nenhuma peça {0} nas folhas"
+
+msgid "no pin ends at {0} mm: a no-connect flag goes on a pin's end"
+msgstr "nenhum pino termina em {0} mm: uma marca de não conectado vai na ponta de um pino"
+
+msgid "no simulation model: give it one in KiCad (Symbol Properties, Simulation Model) or tick Exclude from simulation"
+msgstr "sem modelo de simulação: dê um a ela no KiCad (Propriedades do símbolo, Modelo de simulação) ou marque Excluir da simulação"
+
+msgid "no such track"
+msgstr "trilha inexistente"
+
+msgid "no-connect flag"
+msgstr "marca de não conectado|marcas de não conectado"
+
+msgid "none"
+msgstr "nenhum"
+
+msgid "none chosen: F8 can't add it to the board"
+msgstr "nenhum escolhido: o F8 não consegue pô-la na placa"
+
+msgid "none given"
+msgstr "não informado"
+
+msgid "not a KiCad footprint (a .kicad_mod file)"
+msgstr "não é um footprint do KiCad (um arquivo .kicad_mod)"
+
+msgid "not a STEP file: no DATA section"
+msgstr "não é um arquivo STEP: falta a seção DATA"
+
+msgid "not a library symbol: {0}"
+msgstr "não é um símbolo de biblioteca: {0}"
+
+msgid "not a schematic clip: {0}"
+msgstr "não é um recorte de esquemático: {0}"
+
+msgid "not a text file; drop a .kicad_pcb board"
+msgstr "não é um arquivo de texto; solte uma placa .kicad_pcb"
+
+msgid "not a zip archive Cuprita can read: {0}"
+msgstr "não é um arquivo zip que o Cuprita consiga ler: {0}"
+
+msgid "not annotated: number the parts (KiCad's Annotate Schematic)"
+msgstr "não anotada: numere as peças (o Anotar esquemático do KiCad)"
+
+msgid "not read|not read"
+msgstr "não lida|não lidas"
+
+msgid "not written yet"
+msgstr "não gerado"
+
+msgid "nothing picked to copy: pick a symbol, wire, label or no-connect flag"
+msgstr "nada selecionado para copiar: selecione um símbolo, fio, rótulo ou marca de não conectado"
+
+msgid "nothing to add: give a part's KiCad files (.kicad_sym, .kicad_mod, .step) or a zip of them"
+msgstr "nada a adicionar: dê os arquivos do KiCad de uma peça (.kicad_sym, .kicad_mod, .step) ou um zip deles"
+
+msgid "other nets make way (P walks round)"
+msgstr "as outras redes abrem caminho (P contorna)"
+
+msgid "pad"
+msgstr "pad|pads"
+
+msgid "pad moved|pads moved"
+msgstr "pad movido|pads movidos"
+
+msgid "pad on another net|pads on another net"
+msgstr "pad em outra rede|pads em outra rede"
+
+msgid "pads connected solid"
+msgstr "pads com conexão sólida"
+
+msgid "pads not connected"
+msgstr "pads sem conexão"
+
+msgid "pads with thermal reliefs"
+msgstr "pads com alívios térmicos"
+
+msgid "page {0} has no {1}"
+msgstr "a página {0} não tem {1}"
+
+msgid "part"
+msgstr "peça|peças"
+
+msgid "part added below the board|parts added below the board"
+msgstr "peça adicionada abaixo da placa|peças adicionadas abaixo da placa"
+
+msgid "part to add|parts to add"
+msgstr "peça a adicionar|peças a adicionar"
+
+msgid "part · {0}"
+msgstr "peça · {0}"
+
+msgid "pen {0}"
+msgstr "traço de {0}"
+
+msgid "pins"
+msgstr "pinos"
+
+msgid "power symbol {0}"
+msgstr "símbolo de alimentação {0}"
+
+msgid "priority {0}"
+msgstr "prioridade {0}"
+
+msgid "problem"
+msgstr "problema|problemas"
+
+msgid "put on {0}"
+msgstr "colocado em {0}"
+
+msgid "put parts on the board"
+msgstr "ponha peças na placa"
+
+msgid "reads {0}"
+msgstr "diz {0}"
+
+msgid "recent project"
+msgstr "projeto recente"
+
+msgid "reference placed|references placed"
+msgstr "referência posta|referências postas"
+
+msgid "route the last connection"
+msgstr "roteie a última conexão"
+
+msgid "route the last {0} connections"
+msgstr "roteie as últimas {0} conexões"
+
+msgid "routing"
+msgstr "roteando"
+
+msgid "shape {0}: a label's shape is input, output, bidirectional, tri_state or passive"
+msgstr "formato {0}: o formato de um rótulo é input, output, bidirectional, tri_state ou passive"
+
+msgid "sheet"
+msgstr "folha|folhas"
+
+msgid "sheet \"{0}\" in {1} has no room on its sides for pin {2}: draw its box taller, or delete a pin it no longer needs"
+msgstr "a folha \"{0}\" em {1} não tem espaço nas laterais para o pino {2}: desenhe a caixa dela mais alta, ou exclua um pino de que ela não precisa mais"
+
+msgid "sheet \"{0}\" in {1}: {2}"
+msgstr "folha \"{0}\" em {1}: {2}"
+
+msgid "sheet {0}: give its name, one line of text (Power, USB)"
+msgstr "folha {0}: dê o nome dela, uma linha de texto (Fonte, USB)"
+
+msgid "shoves"
+msgstr "empurra"
+
+msgid "simulated in {0} s"
+msgstr "simulado em {0} s"
+
+msgid "snapped to {0}"
+msgstr "encaixado em {0}"
+
+msgid "spoke width {0}"
+msgstr "largura dos raios {0}"
+
+msgid "symbol"
+msgstr "símbolo|símbolos"
+
+msgid "text"
+msgstr "texto|textos"
+
+msgid "the answer stopped short: ask again"
+msgstr "a resposta parou no meio: pergunte de novo"
+
+msgid "the board has no Edge.Cuts layer: add it in KiCad"
+msgstr "a placa não tem camada Edge.Cuts: adicione-a no KiCad"
+
+msgid "the board was not read from this text"
+msgstr "a placa não foi lida deste texto"
+
+msgid "the board's outline lines lie apart in its file, between parts' drawings: redraw it in KiCad"
+msgstr "as linhas do contorno da placa estão separadas no arquivo, entre desenhos de peças: redesenhe-o no KiCad"
+
+msgid "the bus entry wasn't added, as it would leave a sheet unreadable: {0}"
+msgstr "a entrada de barramento não foi adicionada, pois deixaria uma folha ilegível: {0}"
+
+msgid "the bus wasn't added, as it would leave a sheet unreadable: {0}"
+msgstr "o barramento não foi adicionado, pois deixaria uma folha ilegível: {0}"
+
+msgid "the clip holds nothing to paste: copy symbols, wires or labels first"
+msgstr "o recorte não tem nada para colar: copie símbolos, fios ou rótulos primeiro"
+
+msgid "the clip wasn't pasted, as it would leave a sheet unreadable: {0}"
+msgstr "o recorte não foi colado, pois deixaria uma folha ilegível: {0}"
+
+msgid "the edit wasn't added, as it would leave a sheet unreadable: {0}"
+msgstr "a edição não foi feita, pois deixaria uma folha ilegível: {0}"
+
+msgid "the fields weren't placed, as it would leave a sheet unreadable: {0}"
+msgstr "os campos não foram posicionados, pois deixariam uma folha ilegível: {0}"
+
+msgid "the label wasn't added, as it would leave a sheet unreadable: {0}"
+msgstr "o rótulo não foi adicionado, pois deixaria uma folha ilegível: {0}"
+
+msgid "the library has no symbol {0}"
+msgstr "a biblioteca não tem o símbolo {0}"
+
+msgid "the library symbol has no Footprint field"
+msgstr "o símbolo de biblioteca não tem campo Footprint"
+
+msgid "the library symbol has no Reference field"
+msgstr "o símbolo de biblioteca não tem campo Reference"
+
+msgid "the lookup stopped"
+msgstr "a consulta parou"
+
+msgid "the no-connect flag wasn't added, as it would leave a sheet unreadable: {0}"
+msgstr "a marca de não conectado não foi adicionada, pois deixaria uma folha ilegível: {0}"
+
+msgid "the paper wasn't set, as it would leave a sheet unreadable: {0}"
+msgstr "o papel não foi definido, pois deixaria uma folha ilegível: {0}"
+
+msgid "the schematic's SPICE texts"
+msgstr "os textos SPICE do esquemático"
+
+msgid "the sheet wasn't added, as it would leave a sheet unreadable: {0}"
+msgstr "a folha não foi adicionada, pois deixaria uma folha ilegível: {0}"
+
+msgid "the simulation stopped with an error inside ngspice"
+msgstr "a simulação parou com um erro dentro do ngspice"
+
+msgid "the symbol has no fields to place one by"
+msgstr "o símbolo não tem campos que sirvam de base para posicionar um novo"
+
+msgid "the symbol wasn't added, as it would leave a sheet unreadable: {0}"
+msgstr "o símbolo não foi adicionado, pois deixaria uma folha ilegível: {0}"
+
+msgid "the title block has no such line to take away"
+msgstr "o bloco de título não tem essa linha para remover"
+
+msgid "the title block wasn't set, as it would leave a sheet unreadable: {0}"
+msgstr "o bloco de título não foi definido, pois deixaria uma folha ilegível: {0}"
+
+msgid "the wire from {0} mm would lie along another wire: move it elsewhere"
+msgstr "o fio a partir de {0} mm ficaria sobre outro fio: mova para outro lugar"
+
+msgid "the wire wasn't added, as it would leave a sheet unreadable: {0}"
+msgstr "o fio não foi adicionado, pois deixaria uma folha ilegível: {0}"
+
+msgid "thermal gap {0}"
+msgstr "folga térmica {0}"
+
+msgid "thermal reliefs on through-hole pads"
+msgstr "alívios térmicos nos pads passantes"
+
+msgid "through the board"
+msgstr "a placa toda"
+
+msgid "too many layers"
+msgstr "camadas demais"
+
+msgid "top"
+msgstr "de cima"
+
+msgid "top only"
+msgstr "só em cima"
+
+msgid "track"
+msgstr "trilha|trilhas"
+
+msgid "track added|tracks added"
+msgstr "trilha adicionada|trilhas adicionadas"
+
+msgid "track width"
+msgstr "largura de trilha"
+
+msgid "turn"
+msgstr "volta|voltas"
+
+msgid "unexpected end of file"
+msgstr "fim de arquivo inesperado"
+
+msgid "unexpected file type"
+msgstr "tipo de arquivo inesperado"
+
+msgid "unterminated string"
+msgstr "string não terminada"
+
+msgid "update the board from the schematic"
+msgstr "atualize a placa a partir do esquemático"
+
+msgid "value"
+msgstr "valor|valores"
+
+msgid "value changed|values changed"
+msgstr "valor alterado|valores alterados"
+
+msgid "value hidden|values hidden"
+msgstr "valor oculto|valores ocultos"
+
+msgid "value in its part|values in their parts"
+msgstr "valor dentro da peça|valores dentro das peças"
+
+msgid "via"
+msgstr "via|vias"
+
+msgid "via diameter"
+msgstr "diâmetro de via"
+
+msgid "w {0}"
+msgstr "larg. {0}"
+
+msgid "walks round"
+msgstr "contorna"
+
+msgid "walks round other nets (P shoves)"
+msgstr "contorna as outras redes (P empurra)"
+
+msgid "walks round: {0}"
+msgstr "contorna: {0}"
+
+msgid "warning"
+msgstr "aviso|avisos"
+
+msgid "white"
+msgstr "branca"
+
+msgid "wire"
+msgstr "fio|fios"
+
+msgid "zone"
+msgstr "zona|zonas"
+
+msgid "zone copper"
+msgstr "cobre de zonas"
+
+msgid "zone filled|zones filled"
+msgstr "zona preenchida|zonas preenchidas"
+
+msgid "zone not filled|zones not filled"
+msgstr "zona não preenchida|zonas não preenchidas"
+
+msgid "zone refilled|zones refilled"
+msgstr "zona preenchida de novo|zonas preenchidas de novo"
+
+msgid "{0}  (drag moves, R turns, Del deletes)"
+msgstr "{0}  (arrastar move, R gira, Del exclui)"
+
+msgid "{0}  (drag moves, R turns, F flips, Del deletes)"
+msgstr "{0}  (arrastar move, R gira, F vira, Del exclui)"
+
+msgid "{0}  clearance {1}, priority {2}  ({3})"
+msgstr "{0}  folga {1}, prioridade {2}  ({3})"
+
+msgid "{0}  keeps zone copper out  ({1})"
+msgstr "{0}  mantém fora o cobre das zonas  ({1})"
+
+msgid "{0}  {1} high  (drag moves, R turns, Del deletes)"
+msgstr "{0}  {1} de altura  (arrastar move, R gira, Del exclui)"
+
+msgid "{0}  {1} high  (drag moves, R turns, Del hides)"
+msgstr "{0}  {1} de altura  (arrastar move, R gira, Del oculta)"
+
+msgid "{0}  {1} wide  (drag moves, R turns, Del deletes)"
+msgstr "{0}  {1} de largura  (arrastar move, R gira, Del exclui)"
+
+msgid "{0}  {1}, drill {2}  (drag moves, Del deletes)"
+msgstr "{0}  {1}, furo {2}  (arrastar move, Del exclui)"
+
+msgid "{0} ({1}) as {2} on {3}"
+msgstr "{0} ({1}) como {2} em {3}"
+
+msgid "{0} ({1}) as {2}, no footprint for its package ({3})"
+msgstr "{0} ({1}) como {2}, sem footprint para o encapsulamento ({3})"
+
+msgid "{0} added"
+msgstr "{0} adicionado"
+
+msgid "{0} ago"
+msgstr "há {0}"
+
+msgid "{0} already holds files: pick a new folder, or another name"
+msgstr "{0} já contém arquivos: escolha uma pasta nova, ou outro nome"
+
+msgid "{0} and its schematic have unsaved edits. Save them first?"
+msgstr "{0} e seu esquemático têm edições não salvas. Salvá-las antes?"
+
+msgid "{0} and {1}"
+msgstr "{0} e {1}"
+
+msgid "{0} and {1} are printed over each other"
+msgstr "{0} e {1} estão impressos um sobre o outro"
+
+msgid "{0} and {1} more"
+msgstr "{0} e mais {1}"
+
+msgid "{0} and {1} touch: a short between their nets"
+msgstr "{0} e {1} se tocam: um curto entre as redes deles"
+
+msgid "{0} and {1}: no solder mask between their openings ({2})"
+msgstr "{0} e {1}: sem máscara de solda entre as aberturas ({2})"
+
+msgid "{0} at Digi-Key: its symbol, footprint, datasheet and maker"
+msgstr "{0} na Digi-Key: símbolo, footprint, datasheet e fabricante"
+
+msgid "{0} behind the schematic: {1}"
+msgstr "{0} a trazer do esquemático: {1}"
+
+msgid "{0} can't move: {1}"
+msgstr "{0} não pode se mover: {1}"
+
+msgid "{0} connects to no pin."
+msgstr "{0} não se conecta a nenhum pino."
+
+msgid "{0} connects to nothing."
+msgstr "{0} não se conecta a nada."
+
+msgid "{0} copied: Ctrl+V pastes it, here or in KiCad"
+msgstr "{0} copiado: Ctrl+V cola, aqui ou no KiCad"
+
+msgid "{0} deleted"
+msgstr "Exclusão de {0}"
+
+msgid "{0} dragged"
+msgstr "Arraste de {0}"
+
+msgid "{0} draws part of the board's outline on Edge.Cuts: draw the new outline to meet it in KiCad"
+msgstr "{0} desenha parte do contorno da placa em Edge.Cuts: desenhe no KiCad o novo contorno até encontrá-lo"
+
+msgid "{0} extends itself, through {1}; fix the library in KiCad's symbol editor"
+msgstr "{0} estende a si mesmo, por meio de {1}; corrija a biblioteca no editor de símbolos do KiCad"
+
+msgid "{0} extends {1}, which the library lacks"
+msgstr "{0} estende {1}, que não está na biblioteca"
+
+msgid "{0} flipped"
+msgstr "Virada de {0}"
+
+msgid "{0} flipped to the bottom"
+msgstr "{0} passa para o verso"
+
+msgid "{0} flipped to the top"
+msgstr "{0} passa para a frente"
+
+msgid "{0} h ago"
+msgstr "há {0} h"
+
+msgid "{0} has a no-connect flag, but connects to other pins."
+msgstr "{0} tem uma marca de não conectado, mas se conecta a outros pinos."
+
+msgid "{0} has edits that were never saved, autosaved {1}. Restore them?"
+msgstr "{0} tem edições que nunca foram salvas, salvas automaticamente {1}. Restaurá-las?"
+
+msgid "{0} has no footprint: set its Footprint field (KiCad's Assign Footprints)"
+msgstr "{0} não tem footprint: defina o campo Footprint (o Atribuir Footprints do KiCad)"
+
+msgid "{0} has no number yet."
+msgstr "{0} ainda não tem número."
+
+msgid "{0} has no place in {1}"
+msgstr "{0} não tem posição em {1}"
+
+msgid "{0} has no room to go round"
+msgstr "{0} não tem espaço para contornar"
+
+msgid "{0} has no room to move"
+msgstr "{0} não tem espaço para se mover"
+
+msgid "{0} has unsaved edits. Save them first?"
+msgstr "{0} tem edições não salvas. Salvá-las antes?"
+
+msgid "{0} has {1}"
+msgstr "{0} tem {1}"
+
+msgid "{0} have edits that were never saved, autosaved {1}. Restore them?"
+msgstr "{0} têm edições que nunca foram salvas, salvas automaticamente {1}. Restaurá-las?"
+
+msgid "{0} hidden"
+msgstr "{0} oculto"
+
+msgid "{0} high"
+msgstr "{0} de altura"
+
+msgid "{0} holds a .spiceinit, which ngspice would run as it starts: remove it, or start Cuprita from another folder"
+msgstr "{0} contém um .spiceinit, que o ngspice executaria ao iniciar: remova-o, ou inicie o Cuprita a partir de outra pasta"
+
+msgid "{0} holds itself, so it would never end; point the sheet at another file"
+msgstr "{0} contém a si mesmo, então nunca terminaria; aponte a folha para outro arquivo"
+
+msgid "{0} in the schematic"
+msgstr "{0} no esquemático"
+
+msgid "{0} in the zip is cut short: download it again"
+msgstr "{0} no zip está cortado: baixe-o de novo"
+
+msgid "{0} in the zip is encrypted: unpack it with its password, then add its files"
+msgstr "{0} no zip está criptografado: descompacte-o com a senha e depois adicione os arquivos"
+
+msgid "{0} in the zip is packed in a way Cuprita doesn't read (method {1}): unpack it, then add its files"
+msgstr "{0} no zip está compactado de um jeito que o Cuprita não lê (método {1}): descompacte-o e depois adicione os arquivos"
+
+msgid "{0} in the zip: {1}"
+msgstr "{0} no zip: {1}"
+
+msgid "{0} is a link to another file, which Cuprita won't write through: remove it"
+msgstr "{0} é um link para outro arquivo, pelo qual o Cuprita não escreve: remova-o"
+
+msgid "{0} is a not-connected pin in its symbol, but something connects to it."
+msgstr "{0} é um pino não conectado no símbolo dele, mas algo se conecta a ele."
+
+msgid "{0} is an arc"
+msgstr "{0} é um arco"
+
+msgid "{0} is an input, but nothing on its net{1} drives it."
+msgstr "{0} é uma entrada, mas nada na rede dele{1} o aciona."
+
+msgid "{0} is bare in the solder mask opening of {1} ({2})"
+msgstr "{0} fica exposto na abertura da máscara de solda de {1} ({2})"
+
+msgid "{0} is in the way"
+msgstr "{0} está no caminho"
+
+msgid "{0} is locked"
+msgstr "{0} está travada"
+
+msgid "{0} is no side of a differential pair: the board has no net {1}"
+msgstr "{0} não é lado de um par diferencial: a placa não tem a rede {1}"
+
+msgid "{0} is no side of a differential pair: their nets are named as D+ and D-, or CLK_P and CLK_N"
+msgstr "{0} não é lado de um par diferencial: as redes de um par se chamam como D+ e D-, ou CLK_P e CLK_N"
+
+msgid "{0} is of class {1}"
+msgstr "{0} é da classe {1}"
+
+msgid "{0} is printed across the board's edge"
+msgstr "{0} está impresso cruzando a borda da placa"
+
+msgid "{0} is printed over {1}, where there is no mask to print on"
+msgstr "{0} está impresso sobre {1}, onde não há máscara para imprimir"
+
+msgid "{0} is the narrowest track width; the rules' minimum is {1}"
+msgstr "{0} é a menor largura de trilha; o mínimo das regras é {1}"
+
+msgid "{0} is the routed net's"
+msgstr "{0} é da rede em roteamento"
+
+msgid "{0} is the widest track width: KiCad's Board Setup, Pre-defined Sizes adds wider ones"
+msgstr "{0} é a maior largura de trilha: acrescente maiores no KiCad, em Configurações da Placa, Tamanhos Pré-definidos"
+
+msgid "{0} is this sheet or one above it, so it would show itself: give another file"
+msgstr "{0} é esta folha ou uma acima dela, então mostraria a si mesma: dê outro arquivo"
+
+msgid "{0} isn't a length: type one in {1}, or as 0.3mm or 12mil"
+msgstr "{0} não é um comprimento: digite um em {1}, ou como 0.3mm ou 12mil"
+
+msgid "{0} isn't a library table: fix or remove it, then add the part again"
+msgstr "{0} não é uma tabela de bibliotecas: corrija-a ou remova-a e adicione a peça de novo"
+
+msgid "{0} isn't a symbol library KiCad reads ({1}): fix or remove it, then add the part again"
+msgstr "{0} não é uma biblioteca de símbolos que o KiCad lê ({1}): corrija-a ou remova-a, depois adicione a peça de novo"
+
+msgid "{0} isn't a symbol library KiCad reads ({1}); download it again"
+msgstr "{0} não é uma biblioteca de símbolos que o KiCad lê ({1}); baixe-a de novo"
+
+msgid "{0} isn't in the schematic"
+msgstr "{0} não está no esquemático"
+
+msgid "{0} isn't on the board: Update from schematic (F8) adds it"
+msgstr "{0} não está na placa: Atualizar a partir do esquemático (F8) a adiciona"
+
+msgid "{0} isn't read"
+msgstr "{0} não foi lido"
+
+msgid "{0} mV (sink)"
+msgstr "{0} mV (carga)"
+
+msgid "{0} min ago"
+msgstr "há {0} min"
+
+msgid "{0} mirrored"
+msgstr "{0} espelhado"
+
+msgid "{0} mm is on a bus, which only bus entries and bus labels join: move it elsewhere"
+msgstr "{0} mm fica num barramento, ao qual só entradas de barramento e rótulos de barramento se ligam: mova para outro lugar"
+
+msgid "{0} more, hidden"
+msgstr "mais {0}, ocultas"
+
+msgid "{0} moved"
+msgstr "Movimentação de {0}"
+
+msgid "{0} must be at least 0: type a length"
+msgstr "{0} precisa ser no mínimo 0: digite um comprimento"
+
+msgid "{0} must be more than 0"
+msgstr "{0} tem de ser maior que 0"
+
+msgid "{0} must be more than 0: type a length"
+msgstr "{0} precisa ser maior que 0: digite um comprimento"
+
+msgid "{0} names nothing there: put it on a pin or a wire"
+msgstr "{0} não nomeia nada ali: ponha-o num pino ou num fio"
+
+msgid "{0} not read from {1}: {2}"
+msgstr "{0} não foi lido de {1}: {2}"
+
+msgid "{0} not read: {1}"
+msgstr "{0} não foi lido: {1}"
+
+msgid "{0} not saved: {1}"
+msgstr "{0} não salvo: {1}"
+
+msgid "{0} of {1} 3D models"
+msgstr "{0} de {1} modelos 3D"
+
+msgid "{0} of {1} 3D models · {2} missing, first {3}"
+msgstr "{0} de {1} modelos 3D · {2} faltando, o primeiro {3}"
+
+msgid "{0} of {1} placed"
+msgstr "Montagem: {0} de {1}"
+
+msgid "{0} on the BOM"
+msgstr "{0} na BOM"
+
+msgid "{0} on top, {1} below"
+msgstr "{0} em cima, {1} embaixo"
+
+msgid "{0} on {1}"
+msgstr "{0} em {1}"
+
+msgid "{0} on {1} drawn"
+msgstr "Desenhado em {1}: {0}"
+
+msgid "{0} pad {1}{2}"
+msgstr "{0} pad {1}{2}"
+
+msgid "{0} pad{1}{2}"
+msgstr "{0} pad{1}{2}"
+
+msgid "{0} parts, the first {1}: type more to narrow"
+msgstr "{0} peças, as primeiras {1}: digite mais para filtrar"
+
+msgid "{0} pasted"
+msgstr "{0} colado"
+
+msgid "{0} pin {1}"
+msgstr "{0} pino {1}"
+
+msgid "{0} pin {1} ({2})"
+msgstr "{0} pino {1} ({2})"
+
+msgid "{0} pin {1} has a no-connect flag already"
+msgstr "{0} pino {1} já tem uma marca de não conectado"
+
+msgid "{0} pin {1}{2}"
+msgstr "{0} pino {1}{2}"
+
+msgid "{0} plated, {1} not"
+msgstr "{0} com metalização, {1} sem"
+
+msgid "{0} reaches only one pin: no other pin is on its net."
+msgstr "{0} alcança só um pino: nenhum outro pino está na rede dele."
+
+msgid "{0} set"
+msgstr "{0} definido"
+
+msgid "{0} shape ({1})"
+msgstr "{0} forma ({1})"
+
+msgid "{0} shown"
+msgstr "{0} mostrado"
+
+msgid "{0} shows {1} in 3D (Alt+3); Ctrl+S saves it"
+msgstr "{0} mostra {1} em 3D (Alt+3); Ctrl+S salva"
+
+msgid "{0} solder mask, {1} silkscreen"
+msgstr "máscara de solda {0}, serigrafia {1}"
+
+msgid "{0} stays of class {1} by a pattern of its nets: change that in the class (Inspect, with nothing picked)"
+msgstr "{0} continua na classe {1} por um padrão das redes dela: altere isso na classe (Inspeção, com nada selecionado)"
+
+msgid "{0} takes power, but no pin on its net{1} is a power output to give it."
+msgstr "{0} recebe alimentação, mas nenhum pino na rede dele{1} é uma saída de alimentação que a forneça."
+
+msgid "{0} text {1} ({2})"
+msgstr "{0} texto {1} ({2})"
+
+msgid "{0} to fix"
+msgstr "{0} a corrigir"
+
+msgid "{0} to route"
+msgstr "{0} a rotear"
+
+msgid "{0} to the hole of {1}: clearance {2} < {3}"
+msgstr "{0} ao furo de {1}: folga {2} < {3}"
+
+msgid "{0} to {1}, blind"
+msgstr "{0} a {1}, cega"
+
+msgid "{0} to {1}, buried"
+msgstr "{0} a {1}, enterrada"
+
+msgid "{0} to {1}: clearance {2} < {3}"
+msgstr "{0} a {1}: folga {2} < {3}"
+
+msgid "{0} to {1}: hole clearance {2} < {3}"
+msgstr "{0} a {1}: folga entre furos {2} < {3}"
+
+msgid "{0} track ({1})"
+msgstr "{0} trilha ({1})"
+
+msgid "{0} track {1} ({2})"
+msgstr "{0} trilha {1} ({2})"
+
+msgid "{0} tuned: its net {1} long, by {2}"
+msgstr "{0} ajustada: rede com {1}, por {2}"
+
+msgid "{0} turned"
+msgstr "Rotação de {0}"
+
+msgid "{0} via"
+msgstr "{0} via"
+
+msgid "{0} via {1}"
+msgstr "{0} via {1}"
+
+msgid "{0} was saved by another program: shown as it is now"
+msgstr "{0} foi salvo por outro programa: mostrado como está agora"
+
+msgid "{0} was saved by another program; your edits here stay (Ctrl+S writes over it, keeping it as -bak)"
+msgstr "{0} foi salvo por outro programa; suas edições aqui continuam (Ctrl+S o sobrescreve, guardando-o como -bak)"
+
+msgid "{0} wide"
+msgstr "{0} de largura"
+
+msgid "{0} wide, {1} apart"
+msgstr "{0} de largura, {1} de distância"
+
+msgid "{0} with the design rules"
+msgstr "{0} com as regras de projeto"
+
+msgid "{0} without a part number"
+msgstr "{0} sem número de peça"
+
+msgid "{0} would leave its net's copper it touches"
+msgstr "{0} se soltaria do cobre da própria rede em que encosta"
+
+msgid "{0} zone ({1})"
+msgstr "{0} zona ({1})"
+
+msgid "{0} zone {1} ({2})"
+msgstr "{0} zona {1} ({2})"
+
+msgid "{0} {1}  {2}, {3}  {4}°  (drag moves, R turns, F flips, Del deletes)"
+msgstr "{0} {1}  {2}, {3}  {4}°  (arrastar move, R gira, F vira, Del exclui)"
+
+msgid "{0} {1}  {2}, {3}  {4}°  bottom  (drag moves, R turns, F flips, Del deletes)"
+msgstr "{0} {1}  {2}, {3}  {4}°  lado de baixo  (arrastar move, R gira, F vira, Del exclui)"
+
+msgid "{0} {1} isn't a length: type one in {2}, or as 0.2mm or 8mil"
+msgstr "{0} {1} não é um comprimento: digite um em {2}, ou como 0.2mm ou 8mil"
+
+msgid "{0} {1} set to {2}"
+msgstr "{1} de {0} definido como {2}"
+
+msgid "{0} {1} wide"
+msgstr "{0} com {1} de largura"
+
+msgid "{0} · on this computer"
+msgstr "{0} · neste computador"
+
+msgid "{0} — parse {1}, scene {2}, drc {3}, upload {4} — {5}, {6}, {7}"
+msgstr "{0} — leitura {1}, cena {2}, drc {3}, envio {4} — {5}, {6}, {7}"
+
+msgid "{0} — {1} read in {2}, checked in {3}"
+msgstr "{0} — {1}: leitura em {2}, verificação em {3}"
+
+msgid "{0}'s 3D model"
+msgstr "modelo 3D de {0}"
+
+msgid "{0}'s footprint {1} doesn't read: {2}"
+msgstr "o footprint {1} de {0} não pôde ser lido: {2}"
+
+msgid "{0}'s footprint {1} names no library: write it Library:Footprint"
+msgstr "o footprint {1} de {0} não indica a biblioteca: escreva-o como Biblioteca:Footprint"
+
+msgid "{0}'s silkscreen"
+msgstr "Serigrafia de {0}"
+
+msgid "{0}, checked in {1}"
+msgstr "{0}, verificação em {1}"
+
+msgid "{0}, hidden in its symbol, connects to nothing."
+msgstr "{0}, oculto no símbolo, não se conecta a nada."
+
+msgid "{0}, redrawn and checked in {1}"
+msgstr "{0}; redesenho e verificação em {1}"
+
+msgid "{0}, {1}, and {2}, {3}, drive one net{4} against each other."
+msgstr "{0}, {1}, e {2}, {3}, acionam a mesma rede{4} um contra o outro."
+
+msgid "{0}, {1}, and {2}, {3}, share a net{4}: a pin of no type can't be checked."
+msgstr "{0}, {1}, e {2}, {3}, compartilham uma rede{4}: um pino sem tipo não pode ser verificado."
+
+msgid "{0}, {1}, and {2}, {3}, shouldn't share a net{4}: one can't supply the other."
+msgstr "{0}, {1}, e {2}, {3}, não deveriam compartilhar uma rede{4}: um não pode alimentar o outro."
+
+msgid "{0}. Ctrl+Z puts it back"
+msgstr "{0}. Ctrl+Z desfaz"
+
+msgid "{0}. Ctrl+Z puts them back"
+msgstr "{0}. Ctrl+Z desfaz"
+
+msgid "{0}: KiCad's 3D models aren't installed; install them, or set {1} to their folder"
+msgstr "{0}: os modelos 3D do KiCad não estão instalados; instale-os, ou defina {1} como a pasta deles"
+
+msgid "{0}: WRL models aren't read; give the part a STEP model"
+msgstr "{0}: modelos WRL não são lidos; dê à peça um modelo STEP"
+
+msgid "{0}: a .control block runs \"{1}\", which can reach files and programs: Cuprita runs no such line; take it out to simulate"
+msgstr "{0}: um bloco .control executa \"{1}\", que pode alcançar arquivos e programas: o Cuprita não executa linhas assim; retire-a para simular"
+
+msgid "{0}: a KiCad 6 root sheet without sheet_instances"
+msgstr "{0}: uma folha raiz do KiCad 6 sem sheet_instances"
+
+msgid "{0}: a click puts it down, R turns it, Esc stops"
+msgstr "{0}: um clique o coloca, R o gira, Esc para"
+
+msgid "{0}: an end joins nothing"
+msgstr "{0}: uma ponta não se liga a nada"
+
+msgid "{0}: an item picked isn't in its text"
+msgstr "{0}: um item selecionado não está no texto dela"
+
+msgid "{0}: annular ring {1} < {2}"
+msgstr "{0}: anel anular {1} < {2}"
+
+msgid "{0}: diameter {1} < {2}"
+msgstr "{0}: diâmetro {1} < {2}"
+
+msgid "{0}: drill {1} < {2}"
+msgstr "{0}: furo {1} < {2}"
+
+msgid "{0}: edge clearance {1} < {2}"
+msgstr "{0}: folga da borda {1} < {2}"
+
+msgid "{0}: give the schematic an analysis (KiCad's Simulator, or a text such as .tran 1u 1m)"
+msgstr "{0}: dê ao esquemático uma análise (o Simulador do KiCad, ou um texto como .tran 1u 1m)"
+
+msgid "{0}: item {1} isn't in its text"
+msgstr "{0}: o item {1} não está no texto do arquivo"
+
+msgid "{0}: joined on {1} alone"
+msgstr "{0}: ligada só em {1}"
+
+msgid "{0}: joins nothing"
+msgstr "{0}: não se liga a nada"
+
+msgid "{0}: no-connect flag {1} isn't in its text"
+msgstr "{0}: a marca de não conectado {1} não está no seu texto"
+
+msgid "{0}: not JSON; fix it in KiCad or a text editor first"
+msgstr "{0}: não é JSON; corrija no KiCad ou num editor de texto primeiro"
+
+msgid "{0}: not found in {1}"
+msgstr "{0}: não encontrado em {1}"
+
+msgid "{0}: not found: no folder {1}"
+msgstr "{0}: não encontrado: nenhuma pasta {1}"
+
+msgid "{0}: release to put it down, Esc leaves it"
+msgstr "{0}: solte para largar aí, Esc deixa como estava"
+
+msgid "{0}: sheet \"{1}\" isn't in its text"
+msgstr "{0}: a folha \"{1}\" não está no texto do arquivo"
+
+msgid "{0}: the computer showing this project has no such 3D model"
+msgstr "{0}: o computador que mostra este projeto não tem esse modelo 3D"
+
+msgid "{0}: the project shows more than 4096 sheets; Cuprita reads no more"
+msgstr "{0}: o projeto mostra mais de 4096 folhas; o Cuprita não lê além disso"
+
+msgid "{0}: wire {1} isn't in its text"
+msgstr "{0}: o fio {1} não está no texto do arquivo"
+
+msgid "{0}: {1}"
+msgstr "{0}: {1}"
+
+msgid "{0}: {1} is not set; set it to the folder of its 3D models"
+msgstr "{0}: a variável {1} não está definida; defina-a como a pasta dos modelos 3D"
+
+msgid "{0}: {1} {2}"
+msgstr "{0}: {1} {2}"
+
+msgid "{0}; a double click opens it"
+msgstr "{0}; um clique duplo a abre"
+
+msgid "{0}; check the key's Client ID and Secret against your app at developer.digikey.com"
+msgstr "{0}; confira o Client ID e o Secret da chave com os do seu app em developer.digikey.com"
+
+msgid "~ footprint {0} (moved {1} mm)"
+msgstr "~ footprint {0} (movido {1} mm)"
+
+msgid "~ footprint {0} (pads changed)"
+msgstr "~ footprint {0} (pads alterados)"
+
+msgid "~{RESET} draws a bar over RESET"
+msgstr "~{RESET} desenha uma barra sobre RESET"
+
+msgid "‹ Guide"
+msgstr "‹ Guia"
+
+msgid "↑↓ choose · Enter runs or shows · Esc closes"
+msgstr "↑↓ escolhem · Enter executa ou mostra · Esc fecha"

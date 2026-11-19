@@ -1,0 +1,6 @@
+/target
+/corpus/boards/
+# The owner's own: designs made with Cuprita, other agents' notes, installers downloaded.
+/designs/
+/.agents/
+/*.exe

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Cuprita
+GenericName=PCB and schematic editor
+Comment=Circuit boards at the speed of thought: KiCad projects, opened and saved as they are
+Exec=cuprita %f
+Icon=cuprita
+Terminal=false
+StartupWMClass=cuprita
+Categories=Development;Electronics;Engineering;
+Keywords=PCB;KiCad;schematic;circuit;board;Gerber;

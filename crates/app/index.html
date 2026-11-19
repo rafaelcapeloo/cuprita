@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cuprita</title>
+  <link rel="icon" href="cuprita.svg">
+  <style>
+    html, body { margin: 0; height: 100%; overflow: hidden; background: #101318; color: #8c95a2; font: 15px system-ui, sans-serif; }
+    canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    p { position: absolute; top: 40%; width: 100%; text-align: center; }
+  </style>
+</head>
+<body>
+  <canvas id="cuprita"></canvas>
+  <p id="note">Loading Cuprita…</p>
+  <script>
+    // Ctrl keys that are Cuprita's commands (cmd.rs), not the browser's: a bookmark, find in page, view source, the
+    // address bar; and F1, Cuprita's Help, not the browser's.
+    const own = "defklu1234,";
+    addEventListener("keydown", (e) => ((e.ctrlKey || e.metaKey) && !e.altKey && own.includes(e.key.toLowerCase()) || e.key === "F1") && e.preventDefault(), true);
+  </script>
+  <script type="module">
+    import init from "./cuprita.js";
+    init().catch((e) => (document.getElementById("note").textContent = `Cuprita failed to load: ${e}`));
+  </script>
+</body>
+</html>

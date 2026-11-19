@@ -1,0 +1,21 @@
+[package]
+name = "cuprita-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+categories.workspace = true
+readme = "../../README.md"
+description = "KiCad PCB files: parsing, board model, DRC, routing, zone fill, saving"
+
+[dependencies]
+flate2.workspace = true
+i_overlay.workspace = true
+lyon_tessellation.workspace = true
+
+# libngspice is loaded where KiCad or the system keeps it; a browser has none.
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+libloading.workspace = true

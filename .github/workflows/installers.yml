@@ -1,0 +1,215 @@
+# Cuprita's installers, each built on the system it is for (packaging/README.md): pushing a tag
+# v* publishes them as a GitHub release; "Run workflow" builds them as the run's artifacts only
+# (kept a week: with KiCad's 3D models inside, each is some 300 MB),
+# all of them or the one chosen (a Windows minute counts twice against a private repository's
+# quota, a macOS one ten times).
+name: Installers
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      only:
+        description: Which installer to build
+        type: choice
+        default: all
+        options: [all, windows, macos, deb, rpm, flatpak]
+
+permissions:
+  contents: read
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  web:
+    name: The page Share shows (wasm)
+    # Built once, on any system: the Flatpak, Windows and macOS jobs take it as target/web
+    # (the .deb and RPM build their own, in package.sh).
+    if: github.event_name != 'workflow_dispatch' || contains(fromJSON('["all", "windows", "macos", "flatpak"]'), inputs.only)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - run: rustup toolchain install stable --profile minimal --target wasm32-unknown-unknown
+      - uses: Swatinem/rust-cache@d1527c8f67ef9af357290475d4af4b0fab8f12e0 # v2
+      - run: ./web.sh
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: web
+          path: target/web
+
+  deb:
+    name: Debian and Ubuntu (.deb)
+    # The oldest Ubuntu still supported: the app links its C library, so the package installs
+    # there and on every newer Debian and Ubuntu.
+    if: github.event_name != 'workflow_dispatch' || inputs.only == 'all' || inputs.only == 'deb'
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - run: rustup toolchain install stable --profile minimal
+      - uses: Swatinem/rust-cache@d1527c8f67ef9af357290475d4af4b0fab8f12e0 # v2
+      - run: ./package.sh
+        env:
+          DEBFULLNAME: Cuprita's developers
+          DEBEMAIL: ${{ github.repository_owner }}@users.noreply.github.com
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: deb
+          path: target/package/*.deb
+          compression-level: 0
+          retention-days: 7
+
+  rpm:
+    name: Fedora (.rpm)
+    if: github.event_name != 'workflow_dispatch' || inputs.only == 'all' || inputs.only == 'rpm'
+    runs-on: ubuntu-latest
+    container: fedora:latest
+    steps:
+      - run: dnf install -y --setopt=install_weak_deps=False gcc git rpm-build binutils tar gzip gawk
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - run: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --profile minimal
+      - run: echo "$HOME/.cargo/bin" >> "$GITHUB_PATH"
+      - run: ./package.sh
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: rpm
+          path: target/package/*.rpm
+          compression-level: 0
+          retention-days: 7
+
+  flatpak:
+    name: Flatpak
+    needs: web
+    if: github.event_name != 'workflow_dispatch' || inputs.only == 'all' || inputs.only == 'flatpak'
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/flathub-infra/flatpak-github-actions:freedesktop-25.08
+      options: --privileged
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: web
+          path: target/web
+      # Uploads the bundle as the artifact cuprita-x86_64.
+      - uses: flatpak/flatpak-github-actions/flatpak-builder@79327416609af08178ad73b352877e51450790b3 # v6
+        with:
+          bundle: cuprita.flatpak
+          manifest-path: packaging/flatpak/io.github.rafaelcapeloo.Cuprita.yml
+          cache-key: flatpak-builder-${{ github.sha }}
+
+  windows:
+    name: Windows (installer)
+    needs: web
+    if: github.event_name != 'workflow_dispatch' || inputs.only == 'all' || inputs.only == 'windows'
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: web
+          path: target/web
+      - run: rustup toolchain install stable --profile minimal
+      - uses: Swatinem/rust-cache@d1527c8f67ef9af357290475d4af4b0fab8f12e0 # v2
+      - run: cargo build --release --locked -p cuprita
+      - name: KiCad's libraries
+        shell: bash
+        run: bash packaging/libraries.sh
+      - name: Installer
+        shell: pwsh
+        run: |
+          $version = (Select-String -Path Cargo.toml -Pattern '^version = "(.*)"').Matches[0].Groups[1].Value
+          # The runner's own Inno Setup, else Chocolatey's: whichever version's folder it is in.
+          $found = { Get-ChildItem "${env:ProgramFiles(x86)}\Inno Setup *\ISCC.exe" -ErrorAction SilentlyContinue | Sort-Object FullName | Select-Object -Last 1 }
+          $iscc = & $found
+          if (-not $iscc) {
+            choco install innosetup --no-progress -y
+            $iscc = & $found
+          }
+          if (-not $iscc) { throw "Inno Setup's ISCC.exe was not found" }
+          & $iscc.FullName "/DVersion=$version" packaging\windows\cuprita.iss
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Install it and find a part (this Windows has no KiCad)
+        shell: bash
+        run: |
+          ./target/package/cuprita-*-setup.exe //VERYSILENT //CURRENTUSER //SUPPRESSMSGBOXES //NORESTART
+          "$LOCALAPPDATA/Programs/Cuprita/cuprita.exe" --json '{"cmd":"library","symbol":"LM358","limit":1}' | grep -q 'Amplifier_Operational:LM358'
+          "$LOCALAPPDATA/Programs/Cuprita/cuprita.exe" --json '{"cmd":"library","footprint":"SOIC-8 3.9","limit":1}' | grep -q 'Package_SO:SOIC-8'
+          test -f "$LOCALAPPDATA/Programs/Cuprita/kicad/3dmodels/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: windows
+          path: target/package/*.exe
+          compression-level: 0
+          retention-days: 7
+
+  macos:
+    name: macOS (.dmg)
+    needs: web
+    if: github.event_name != 'workflow_dispatch' || inputs.only == 'all' || inputs.only == 'macos'
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: web
+          path: target/web
+      - run: rustup target add aarch64-apple-darwin x86_64-apple-darwin
+      - uses: Swatinem/rust-cache@d1527c8f67ef9af357290475d4af4b0fab8f12e0 # v2
+      - run: |
+          cargo build --release --locked -p cuprita --target aarch64-apple-darwin
+          cargo build --release --locked -p cuprita --target x86_64-apple-darwin
+      - name: App and disk image
+        run: |
+          version=$(sed -n 's/^version = "\(.*\)"/\1/p' Cargo.toml | head -1)
+          disk=target/package/dmg
+          app=$disk/Cuprita.app
+          mkdir -p "$app/Contents/MacOS" "$app/Contents/Resources/web"
+          cp target/web/index.html target/web/*.js target/web/*.wasm target/web/*.svg "$app/Contents/Resources/web/"
+          packaging/libraries.sh
+          mv target/libraries "$app/Contents/Resources/kicad"
+          # One app for Apple silicon and Intel Macs.
+          lipo -create -output "$app/Contents/MacOS/cuprita" \
+            target/aarch64-apple-darwin/release/cuprita target/x86_64-apple-darwin/release/cuprita
+          # The app as installed finds the libraries it carries (this Mac has no KiCad).
+          "$app/Contents/MacOS/cuprita" --json '{"cmd":"library","symbol":"LM358","limit":1}' | grep -q 'Amplifier_Operational:LM358'
+          sed "s/@VERSION@/$version/g" packaging/macos/Info.plist > "$app/Contents/Info.plist"
+          cp packaging/macos/cuprita.icns LICENSE packaging/NOTICE.txt packaging/CRATES.txt crates/app/assets/LICENSE-*.txt "$app/Contents/Resources/"
+          # Signed ad hoc (Apple silicon runs only signed code); not notarized, so the first
+          # start is right-click › Open.
+          codesign --force --deep --sign - "$app"
+          ln -s /Applications "$disk/Applications"
+          hdiutil create -volname Cuprita -srcfolder "$disk" -ov -format ULMO "target/package/cuprita-$version-macos.dmg"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: macos
+          path: target/package/*.dmg
+          compression-level: 0
+          retention-days: 7
+
+  release:
+    name: Release
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [deb, rpm, flatpak, windows, macos]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          path: out
+          merge-multiple: true
+      # Their SHA-256, for who downloads one to check it came whole and as built here.
+      - run: cd out && sha256sum *.deb *.rpm *.flatpak *.exe *.dmg > SHA256SUMS.txt
+      # The installers, not the page's files they carry (the artifact `web`).
+      - uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65 # v2
+        with:
+          files: |
+            out/*.deb
+            out/*.rpm
+            out/*.flatpak
+            out/*.exe
+            out/*.dmg
+            out/SHA256SUMS.txt
+          generate_release_notes: true

@@ -1,0 +1,38 @@
+[workspace]
+resolver = "3"
+members = ["crates/*"]
+
+[workspace.package]
+version = "0.0.1"
+edition = "2024"
+license = "GPL-3.0-or-later"
+rust-version = "1.95"
+repository = "https://github.com/rafaelcapeloo/cuprita"
+homepage = "https://github.com/rafaelcapeloo/cuprita"
+keywords = ["pcb", "kicad", "eda", "cad", "electronics"]
+categories = ["science", "graphics"]
+
+[workspace.dependencies]
+cuprita-core = { path = "crates/core", version = "0.0.1" }
+cuprita-render = { path = "crates/render", version = "0.0.1" }
+wgpu = "30"
+eframe = { version = "0.37", default-features = false, features = ["wgpu", "wayland", "x11", "clipboard"] }
+bytemuck = { version = "1.25", features = ["derive"] }
+lyon_tessellation = "1.0"
+i_overlay = "9.1"
+pollster = "1.0"
+png = "0.18"
+flate2 = "1.1"
+crc32fast = "1.5"
+web-time = "1.1"
+web-sys = "0.3"
+libloading = "0.8"
+egui_plot = "0.38"
+rfd = "0.17"
+qrcodegen = "1.8"
+
+# The browser build (`web.sh`): optimised whole, for a download a tenth smaller and no slower.
+[profile.web]
+inherits = "release"
+lto = "fat"
+codegen-units = 1

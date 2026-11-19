@@ -1,0 +1,4 @@
+# rustup adds the browser build's target (`./web.sh`) on first use.
+[toolchain]
+channel = "stable"
+targets = ["wasm32-unknown-unknown"]

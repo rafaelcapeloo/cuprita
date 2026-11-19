@@ -1,0 +1,38 @@
+[package]
+name = "cuprita"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+categories.workspace = true
+readme = "../../README.md"
+description = "Cuprita: a fast PCB and schematic editor that opens and saves KiCad files"
+
+[[bin]]
+name = "cuprita"
+path = "src/main.rs"
+
+[dependencies]
+cuprita-core.workspace = true
+cuprita-render.workspace = true
+eframe.workspace = true
+png.workspace = true
+flate2.workspace = true
+crc32fast.workspace = true
+web-time.workspace = true
+
+# The schematic's simulation plots (a browser has no ngspice to simulate in), the system's Open
+# and folder dialogs, which know the user's places as no dialog of ours would, and the QR code of
+# a shared project's address (`share.rs`: an encoder with no dependencies of its own).
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+egui_plot.workspace = true
+rfd.workspace = true
+qrcodegen.workspace = true
+
+# eframe brings web-sys; a saved board downloads through object URLs and links, which it leaves
+# out, as it does the page's language (`Navigator`) and what a server replies (`Response`).
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+web-sys = { workspace = true, features = ["HtmlAnchorElement", "Navigator", "Response", "Storage", "Url"] }

@@ -1,0 +1,80 @@
+# Cuprita as a Flatpak, with the ngspice it simulates in and the git its changes view reads (the
+# runtime has neither). Cargo fetches the crates while it builds, which a bundle built here or by
+# the release workflow allows (Flathub would want them vendored). The page Share shows is built
+# before, outside (the SDK's Rust has no wasm target): ./web.sh leaves it in target/web.
+#   ./web.sh && flatpak run org.flatpak.Builder --user --install --force-clean <dir> packaging/flatpak/io.github.rafaelcapeloo.Cuprita.yml
+id: io.github.rafaelcapeloo.Cuprita
+runtime: org.freedesktop.Platform
+runtime-version: '25.08'
+sdk: org.freedesktop.Sdk
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.rust-stable
+command: cuprita
+rename-desktop-file: cuprita.desktop
+rename-icon: cuprita
+finish-args:
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --share=ipc
+  - --device=dri
+  # Digi-Key, Ollama on this computer, parts' datasheets.
+  - --share=network
+  # The user's KiCad projects, wherever they are.
+  - --filesystem=home
+  # KiCad's libraries, 3D models and templates: the system's (/run/host/usr/share/kicad) and
+  # the KiCad Flatpak's.
+  - --filesystem=host-os:ro
+  - --filesystem=/var/lib/flatpak/runtime/org.kicad.kicad.Library:ro
+  - --filesystem=~/.local/share/flatpak/runtime/org.kicad.kicad.Library:ro
+modules:
+  - name: ngspice
+    config-opts: [--with-ngshared, --enable-xspice, --enable-cider, --disable-debug]
+    cleanup: [/include, /share/man, '*.la']
+    post-install:
+      - install -Dm644 COPYING /app/share/licenses/ngspice/COPYING
+    sources:
+      - type: archive
+        url: https://sourceforge.net/projects/ngspice/files/ng-spice-rework/47/ngspice-47.tar.gz/download
+        dest-filename: ngspice-47.tar.gz
+        sha256: 894e649651f1838a14095e5a5439e7d3aa63e87ede14d283173fda4fcdef675f
+
+  - name: git
+    buildsystem: simple
+    build-commands:
+      - make -j$FLATPAK_BUILDER_N_JOBS prefix=/app NO_RUST=1 NO_TCLTK=1 NO_GETTEXT=1 NO_PERL=1 NO_PYTHON=1 INSTALL_SYMLINKS=1 install
+      - install -Dm644 COPYING /app/share/licenses/git/COPYING
+    cleanup: [/share/man, /share/git-gui, /share/gitweb, /lib/perl5]
+    sources:
+      - type: archive
+        url: https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.56.0.tar.xz
+        sha256: 26c56c296b38c0695b26fa95f475f1d01704d2d38e73465ca30b0b2f5dc789d3
+
+  - name: cuprita
+    buildsystem: simple
+    build-options:
+      append-path: /usr/lib/sdk/rust-stable/bin
+      build-args: [--share=network]
+      env:
+        CARGO_HOME: /run/build/cuprita/cargo
+    build-commands:
+      - cargo build --release --locked -p cuprita
+      - install -Dm755 target/release/cuprita /app/bin/cuprita
+      - install -Dm644 crates/app/assets/cuprita.desktop /app/share/applications/cuprita.desktop
+      # The window takes the Flatpak's id, which names the launcher: no other class to match.
+      - desktop-file-edit --remove-key=StartupWMClass /app/share/applications/cuprita.desktop
+      - install -Dm644 crates/app/assets/cuprita.svg /app/share/icons/hicolor/scalable/apps/cuprita.svg
+      - install -Dm644 crates/app/assets/cuprita.png /app/share/icons/hicolor/256x256/apps/cuprita.png
+      - install -Dm644 packaging/flatpak/io.github.rafaelcapeloo.Cuprita.metainfo.xml /app/share/metainfo/io.github.rafaelcapeloo.Cuprita.metainfo.xml
+      - install -Dm644 -t /app/share/licenses/cuprita LICENSE packaging/NOTICE.txt packaging/CRATES.txt crates/app/assets/LICENSE-*.txt
+      - install -Dm644 -t /app/share/cuprita/web web/index.html web/*.js web/*.wasm web/*.svg
+      # KiCad's symbols, footprints and 3D models, for where no KiCad is installed (fetched as the
+      # crates are).
+      - packaging/libraries.sh
+      - mv target/libraries /app/share/cuprita/kicad
+    sources:
+      - type: dir
+        path: ../..
+        skip: [target, corpus/boards, .claude, .git]
+      - type: dir
+        path: ../../target/web
+        dest: web
