@@ -85,7 +85,9 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/flathub-infra/flatpak-github-actions:freedesktop-25.08
-      options: --privileged
+      # Flatpak's own folder on a volume (which starts as the image's): on some runners its
+      # updates of the SDK can't rename across the image's layers ("Invalid cross-device link").
+      options: --privileged -v cuprita-flatpak:/var/lib/flatpak
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
@@ -165,6 +167,9 @@ jobs:
           version=$(sed -n 's/^version = "\(.*\)"/\1/p' Cargo.toml | head -1)
           disk=target/package/dmg
           app=$disk/Cuprita.app
+          # The build's cache brings back what an earlier run left here: the libraries would be
+          # moved into the folder it kept, a level too deep for the app to find.
+          rm -rf target/package
           mkdir -p "$app/Contents/MacOS" "$app/Contents/Resources/web"
           cp target/web/index.html target/web/*.js target/web/*.wasm target/web/*.svg "$app/Contents/Resources/web/"
           packaging/libraries.sh
@@ -172,13 +177,16 @@ jobs:
           # One app for Apple silicon and Intel Macs.
           lipo -create -output "$app/Contents/MacOS/cuprita" \
             target/aarch64-apple-darwin/release/cuprita target/x86_64-apple-darwin/release/cuprita
-          # The app as installed finds the libraries it carries (this Mac has no KiCad).
-          "$app/Contents/MacOS/cuprita" --json '{"cmd":"library","symbol":"LM358","limit":1}' | grep -q 'Amplifier_Operational:LM358'
           sed "s/@VERSION@/$version/g" packaging/macos/Info.plist > "$app/Contents/Info.plist"
           cp packaging/macos/cuprita.icns LICENSE packaging/NOTICE.txt packaging/CRATES.txt crates/app/assets/LICENSE-*.txt "$app/Contents/Resources/"
           # Signed ad hoc (Apple silicon runs only signed code); not notarized, so the first
           # start is right-click › Open.
           codesign --force --deep --sign - "$app"
+          # The app as it will be opened (signed, with what it carries) finds a part: this Mac has
+          # no KiCad. What it answered is shown, so a failure says why.
+          found=$("$app/Contents/MacOS/cuprita" --json '{"cmd":"library","symbol":"LM358","limit":1}' 2>&1) || true
+          echo "$found"
+          case $found in *Amplifier_Operational:LM358*) ;; *) exit 1 ;; esac
           ln -s /Applications "$disk/Applications"
           hdiutil create -volname Cuprita -srcfolder "$disk" -ov -format ULMO "target/package/cuprita-$version-macos.dmg"
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
